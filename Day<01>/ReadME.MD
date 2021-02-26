@@ -13,10 +13,10 @@ Each time the teacher turns her back, a student with roll number X sitting on de
 If the current position of N students in the class is given to you in an array, such that i is the desk number and a[i] is the roll number of the student sitting on the desk, can you modify a[ ] to represent the next position of all the students ?</blockquote>
 
 * **Example 1**:<br>
-```&emsp;&emsp;N = 6<br>
+<p>&emsp;&emsp;N = 6<br>
 &emsp;&emsp;a[] = {0, 5, 1, 2, 4, 3}<br>
 &emsp;&emsp;Output: 0 3 5 1 4 2<br>
-&emsp;&emsp;Explanation: After reshuffling, the modified position of all the students would be {0, 3, 5, 1, 4, 2}.<br>```
+&emsp;&emsp;Explanation: After reshuffling, the modified position of all the students would be {0, 3, 5, 1, 4, 2}.<br></p>
 * **Example 2**:<br>
 &emsp;&emsp;N = 5<br>
 &emsp;&emsp;a[] = {4, 3, 2, 1, 0}<br>
