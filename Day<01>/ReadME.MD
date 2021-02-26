@@ -27,17 +27,14 @@ If the current position of N students in the class is given to you in an array, 
 You dont need to read input or print anything. Complete the function prank() which takes the array a[ ] and its size N as input parameters and modifies the array in-place to reflect the new arrangement.
 
 <table align="center">
-      <tr><td><em>Expected Time Complexity</td> <td><em>Expected Auxiliary Space</td></tr>
+      <tr><td><em><b>Expected Time Complexity</td> <td><em><b>Expected Auxiliary Space</td></tr>
       <tr><td align="center">O(N)</td> <td align="center">O(1)</td></tr>
 </table>
- 
-Expected Time Complexity | Expected Auxiliary Space
------------------------- | ------------------------
-              O(N)          |               O(1)          
+       
 
 #### Constraints:
-1 ≤ `N` ≤ 10⁵<br>
-0 ≤ `a[i]` ≤ N-1
+1  ≤  `N`  ≤  10⁵<br>
+0  ≤  `a[i]`  ≤  N-1
 
 
 <!--
