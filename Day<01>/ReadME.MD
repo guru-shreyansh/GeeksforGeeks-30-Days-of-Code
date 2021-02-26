@@ -1,11 +1,9 @@
-
-<h1>:people_holding_hands: Rearrange Geek and his Classmates</h1><img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Easy%231.png" width="100">
+<img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Easy%231.png" width="100">
+<h1>:people_holding_hands: Rearrange Geek and his Classmates</h1>
 
 `List`
 `Array`
 `Vector`
-
-
 <img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/D01.png" height="300">
 ________________________________________________________________________________________________________________________________________________________
 <h3>✚ Day 1 :heavy_check_mark:</h3>
