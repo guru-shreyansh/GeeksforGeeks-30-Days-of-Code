@@ -1,11 +1,10 @@
-<h2>:people_holding_hands: Rearrange Geek and his Classmates
-  <img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Easy%231.png" width="100"></h2>
-
+<h1>:people_holding_hands: Rearrange Geek and his Classmates
+  <img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Easy%231.png" width="100"></h1>
 ```Array```
 
 <img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/D01.png" height="300">
 ________________________________________________________________________________________________________________________________________________________
-<h3>✚ Day 1 [x]</h3>
+<h3>✚ Day 1 :heavy_check_mark:</h3>
 
 <blockquote>Geek and his classmates are playing a prank on their Computer Science teacher. They change places every time the teacher turns to look at the blackboard. 
 
