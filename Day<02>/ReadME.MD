@@ -3,7 +3,7 @@
 
 `Mathematical`
 `Number System`
-<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C01%3E/D02.png">
+<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C02%3E/D02.png">
 ________________________________________________________________________________________________________________________________________________________
 <h3>:heavy_check_mark: Day 2</h3>
 <blockquote>Given a positive integer N. You have to find Nth natural number after removing all the numbers containing digit 9.</blockquote>
