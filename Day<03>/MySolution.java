@@ -30,11 +30,11 @@ class Solution
         long currNumber = 1L;               // Minimum positive output
 		for (int i=0; i<array.length; i++)
 		{
-			if (array[i] <= currNumber)
- 				currNumber += array[i];
- 			else
- 			    break;
-		}
+            if (array[i] <= currNumber)
+                currNumber += array[i];
+            else
+                break;
+        }
  		return currNumber;
     }
 }
