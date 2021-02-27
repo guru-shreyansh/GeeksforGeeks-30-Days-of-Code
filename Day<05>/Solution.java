@@ -21,7 +21,7 @@ class GFG
 			}
 			Solution obj = new Solution();
 			System.out.println(obj.findK(arr, n, m, k));
-		  t--;
+      t--;
 		}
 	}
 }
@@ -30,7 +30,7 @@ class Solution
 {
     public int findK(int a[][], int n, int m, int k)
     {
-		    int top = 0;
+        int top = 0;
         int left = 0;
         int right = m-1;
         int bottom = n-1;
@@ -61,7 +61,7 @@ class Solution
                 right--;
                 dir=2;   
             }
-            if(dir==2)
+            if (dir==2)
             {
                 for (int i=right;i>=left;i--)
                 {
@@ -72,7 +72,7 @@ class Solution
                 bottom--;
                 dir=3;
             }
-            if(dir==3)
+            if (dir==3)
             {
                 for(int i=bottom;i>=top;i--)
                 {
