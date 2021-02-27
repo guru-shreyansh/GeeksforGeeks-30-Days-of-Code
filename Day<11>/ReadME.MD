@@ -62,7 +62,7 @@ Can you help Geek encrypt his message string S?
 	        }
 	    }
 	    return sub.toString();
-    }
+    	}
 	public String compress(String s)
 	{
 	    int i=0, n = s.length();
