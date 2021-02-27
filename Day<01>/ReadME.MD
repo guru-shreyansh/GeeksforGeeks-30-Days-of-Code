@@ -35,6 +35,8 @@ If the current position of N students in the class is given to you in an array, 
 1  ≤ ` N ` ≤  10⁵<br>
 0  ≤ ` a[i] ` ≤  N-1
 
+~~HINTS~~
+- [x] Use simple mathematics and modular arithmetic.
 ```java
 void prank(long[] arr, int n)
 {
