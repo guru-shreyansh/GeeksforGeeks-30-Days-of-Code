@@ -12,14 +12,14 @@ ________________________________________________________________________________
 * **Example 1**:<br>
 &emsp;&emsp;N = 3, M = 3, K = 4<br>
 &emsp;&emsp;A[ ] = {{1, 2, 3},<br>
-&emsp;&emsp;       {4, 5, 6},<br>
-&emsp;&emsp;       {7, 8, 9}}<br>
+&emsp;&emsp;&emsp;  {4, 5, 6},<br>
+&emsp;&emsp;&emsp;  {7, 8, 9}}<br>
 &emsp;&emsp;Output: 6<br>
 &emsp;&emsp;Explanation: Spiral traversal of matrix: {1, 2, 3, 6, 9, 8, 7, 4, 5}. Fourth element is 6.<br>
 * **Example 2**:<br>
 &emsp;&emsp;N = 2, M = 2, K = 2<br>
 &emsp;&emsp;A[ ] = {{1, 2},<br>
-&emsp;&emsp;        {3, 4}}<br>
+&emsp;&emsp;&emsp;  {3, 4}}<br>
 &emsp;&emsp;Output: 2<br>
 &emsp;&emsp;Explanation: Spiral traversal of matrix: {1, 2, 4, 3}. Second element is 2.<br>
 
