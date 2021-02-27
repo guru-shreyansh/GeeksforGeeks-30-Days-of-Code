@@ -52,8 +52,7 @@ void prank(long[] arr, int n)
 @author : Shreyansh Kumar Singh
 ```
 <p align="right">
-    ⭐️<a href="https://github.com/GURU-Shreyansh" target="_blank"> <h2>GURU-Shreyansh</h2></a><img 
-          src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Shinchan-vIxKKPtpfnL1K.gif" width="80">
+    ⭐️<a href="https://github.com/GURU-Shreyansh" target="_blank"> <h2>GURU-Shreyansh</h2></a><img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Shinchan-vIxKKPtpfnL1K.gif" width="70">
 </p>
 <!--
 #GURU ツ
