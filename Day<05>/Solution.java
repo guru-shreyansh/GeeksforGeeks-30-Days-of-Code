@@ -74,7 +74,7 @@ class Solution
             }
             if (dir==3)
             {
-                for(int i=bottom;i>=top;i--)
+                for (int i=bottom;i>=top;i--)
                 {
                     k--;
                     if(k == 0)
