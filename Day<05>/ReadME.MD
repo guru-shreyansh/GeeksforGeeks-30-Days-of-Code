@@ -42,8 +42,8 @@ static int findK( int arr[][], int rowEnd, int columnEnd, int K)
     int k = 1;
     int i, rowStart = 0, columnStart = 0;
 
-		while (rowStart < rowEnd && columnStart < columnEnd)
-		{
+    while (rowStart < rowEnd && columnStart < columnEnd)
+    {
         for (i = columnStart; i < columnEnd; ++i, ++k)
             if ( k==K )
                 return arr[rowStart][i];
@@ -70,7 +70,7 @@ static int findK( int arr[][], int rowEnd, int columnEnd, int K)
             columnStart++;
         }
     }
-		return -1;
+    return -1;
 }
 @author : Shreyansh Kumar Singh
 ```
