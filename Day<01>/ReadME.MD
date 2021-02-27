@@ -1,4 +1,4 @@
-<img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Easy%231.png" width="100">
+<img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Easy%231.png" width="120">
 <h1>:people_holding_hands: Rearrange Geek and his Classmates</h1>
 
 `List`
@@ -35,7 +35,7 @@ If the current position of N students in the class is given to you in an array, 
 1  ≤ ` N ` ≤  10⁵<br>
 0  ≤ ` a[i] ` ≤  N-1
 
-∑ <u>HINTS:</u>
+∑ <span>HINTS:</span>
 - [x] _Use simple mathematics and modular arithmetic._
 ```java
 void prank(long[] arr, int n)
@@ -51,7 +51,7 @@ void prank(long[] arr, int n)
 }
 @author : Shreyansh Kumar Singh
 ```
-@GURU_Shreyansh
+@guru_shreyansh
 <!--
 #GURU ツ
 -->
