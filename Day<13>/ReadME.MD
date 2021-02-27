@@ -40,7 +40,10 @@ ________________________________________________________________________________
 1  ≤ ` N ` ≤  10³<br> 
 
 ###      ∑ HINTS ▸
-- [x] _ _
+- [x] _The root element will be the first element of preorder._
+- [x] _Search for root in the inorder array and store it’s index as idx._
+- [x] _Use this idx to determine elements of left and right subtree in all three traversal arrays._
+- [x] _Call function recursively for both left and right sub tree._
 ```java
 class Solution
 {
