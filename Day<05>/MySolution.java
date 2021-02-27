@@ -21,7 +21,7 @@ class GURU
 			}
 			Solution obj = new Solution();
 			System.out.println(obj.findK(arr, n, m, k));
-		    t--;
+		    --t;
 		}
 	}
 }
