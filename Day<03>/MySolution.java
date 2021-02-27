@@ -32,7 +32,7 @@ class Solution
 		{
 			if (array[i] <= currNumber)
  				currNumber += array[i];
- 			else 
+ 			else
  			    break;
 		}
  		return currNumber;
