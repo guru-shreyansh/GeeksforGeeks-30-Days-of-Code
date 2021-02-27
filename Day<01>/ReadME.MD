@@ -4,7 +4,7 @@
 `List`
 `Array`
 `Vector`
-<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/D01.png">
+<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C01%3E/D01.png">
 ________________________________________________________________________________________________________________________________________________________
 <h3>:heavy_check_mark: Day 1</h3>
 <blockquote>Geek and his classmates are playing a prank on their Computer Science teacher. They change places every time the teacher turns to look at the blackboard.
