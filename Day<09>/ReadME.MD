@@ -38,7 +38,8 @@ Help Harry calculates minimum number of times he needs to use the spell to chang
 `A` and `B` consists of lowercase and uppercase letters of english alphabet only.
 
 ###      ∑ HINTS ▸
-- [x] _ _
+- [x] _Firsly, we need to check whether such a conversion is possible or not, the frequency of all the elements in A must be same as the frequency of all the elements in B._
+- [x] _Start matching from last characters of both strings. If last characters match, then our task reduces to remaining characters. If last characters don’t match, then find the position of B’s mismatching character in A. The difference between two positions indicates that these many characters of A must be moved._
 ```java
     int transfigure(String A, String B)
     {
