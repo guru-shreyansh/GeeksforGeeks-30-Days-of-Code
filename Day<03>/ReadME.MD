@@ -39,16 +39,16 @@ represented as sum of elements from the array.<br>
 ```java
 long smallestpositive(long[] array, int n)
 {
-    Arrays.sort(array);
-    long currNumber = 1L;               // Minimum positive output
-    for(int i=0; i<array.length; i++)
-    {
-        if(array[i] <= currNumber)
- 		    currNumber += array[i];
- 	    else 
-    	    break;
-    }
-    return currNumber;
+	Arrays.sort(array);
+	long currNumber = 1L;               // Minimum positive output
+	for(int i=0; i<array.length; i++)
+	{
+		if(array[i] <= currNumber)
+			currNumber += array[i];
+		else 
+			break;
+	}
+	return currNumber;
 }
 @author : Shreyansh Kumar Singh
 ```
