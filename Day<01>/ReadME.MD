@@ -30,22 +30,22 @@ If the current position of N students in the class is given to you in an array, 
       <tr><td><em><b>Expected Time Complexity</td> <td><em><b>Expected Auxiliary Space</td></tr>
       <tr><td align="center">O(N)</td> <td align="center">O(1)</td></tr>
 </table>
-       
-#### Constraints:
-1  ≤  `N`  ≤  10⁵<br>
-0  ≤  `a[i]`  ≤  N-1
+
+#### < Constraints >
+1  ≤ ` N ` ≤  10⁵<br>
+0  ≤ ` a[i] ` ≤  N-1
 
 ```java
 void prank(long[] arr, int n)
 {
       long temp = 0;
-      long[] out = new long[n];
+      long[] result = new long[n];
       for (int i=0; i<n; i++)
       {
-          out[i] = arr[ (int)arr[i] ];
+          result[i] = arr[ (int)arr[i] ];
       }
-      // System.out.println(Arrays.toString(out));
-      System.arraycopy(out, 0, arr, 0, n);
+      // System.out.println(Arrays.toString(result));
+      System.arraycopy(result, 0, arr, 0, n);
 }
 ```
 <!--
