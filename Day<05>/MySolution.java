@@ -28,7 +28,7 @@ class GURU
 
 class Solution
 {
-    static int findK( int arr[][], int rowEnd, int columnEnd, int K)
+    static int findK(int arr[][], int rowEnd, int columnEnd, int K)
 	{
 	    int k = 1;
 	    int i, rowStart = 0, columnStart = 0;
