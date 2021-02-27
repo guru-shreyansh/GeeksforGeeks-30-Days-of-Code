@@ -23,7 +23,7 @@ If the current position of N students in the class is given to you in an array, 
 &emsp;&emsp;Output: 0 1 2 3 4 <br>
 &emsp;&emsp;Explanation: After reshuffling, the modified position of all the students would be {0, 1, 2, 3, 4}.<br>
 
-**➔ ➪ Your Task**:
+**➔ Your Task**:
 <mark>You dont need to read input or print anything. Complete the function prank() which takes the array a[ ] and its size N as input parameters and modifies the array in-place to reflect the new arrangement.</mark>
 
 <table align="center">
