@@ -35,7 +35,7 @@ If the current position of N students in the class is given to you in an array, 
 1  ≤ ` N ` ≤  10⁵<br>
 0  ≤ ` a[i] ` ≤  N-1
 
-∑ <u>HINTS:
+∑ <u>HINTS:</u>
 - [x] _Use simple mathematics and modular arithmetic._
 ```java
 void prank(long[] arr, int n)
@@ -51,6 +51,7 @@ void prank(long[] arr, int n)
 }
 @author : Shreyansh Kumar Singh
 ```
+@GURU_Shreyansh
 <!--
-¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ¹⁰
+#GURU ツ
 -->
