@@ -4,9 +4,9 @@
 `BFS`
 `Queue`
 `Graph`
-<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C20%3E/D20.png">
+<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C25%3E/D25.png">
 ________________________________________________________________________________________________________________________________________________________
-<h3>:heavy_check_mark: Day 20</h3>
+<h3>:heavy_check_mark: Day 25</h3>
 <blockquote>Spiderman is stuck in a difficult situation. His arch-enemy the Green Goblin has planted several of his infamous Pumpkin Bombs in various locations in a building. Help Spiderman activate his Spidey Sense and identify the impact zones. 
 He has a blueprint of the building which is a M x N matrix that is filled with the characters ‘O’, ‘B’, and ‘W’ where: 
 ‘O’ represents an open space.
