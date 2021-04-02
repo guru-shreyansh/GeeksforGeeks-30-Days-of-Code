@@ -8,3 +8,13 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
 * **Day [1]** : [**Rearrange Geek and his Classmates**](https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C01%3E) <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isEasy.png" alt="Day [1]" height="25" width="75">
 
 * **Day [2]** : [**Rearrange Geek and his Classmates**](https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C01%3E) <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isEasy.png" alt="Day [1]" height="25" width="75">
+
+
+<table align="center">
+
+   <tr><td align="center">  Days  </td> <td align="center"><em><b>     Question Title    </td> <td align="center">  Difficulty  </td></tr>
+    <tr><td><em>Day [1]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C01%3E" target="_blank">
+    <b>Rearrange Geek and his Classmates</b>    </a></td> <td align="center"><img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isEasy.png"        alt="Day [1]" height="30" width="90" align="center"></td></tr>
+    <tr><td><em>Day [1]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C01%3E" target="_blank">
+    <b>Rearrange Geek and his Classmates</b>    </a></td> <td align="center"><img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isHard.png"        alt="Day [2]" height="30" width="90" align="center"></td></tr>
+</table>
