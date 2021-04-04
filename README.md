@@ -1,6 +1,8 @@
 # GeeksforGeeks-30-Days-of-Code
 30 Days to Form a New Habit of Coding and I'm In! Batch [1] 26 January ’21 to 27 February ’21
 
+<img align="right" src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/30-Days-of-Code-By-GeeksforGeeks.png" alt="30DaysOfCodeWithGFG" height="135" width="260">
+
 [GeeksforGeeks : 30 Days of Code](https://practice.geeksforgeeks.org/batch/30-days-of-code-1)
 <br>
 <!--
