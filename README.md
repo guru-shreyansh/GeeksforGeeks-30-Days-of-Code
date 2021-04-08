@@ -23,5 +23,8 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
     <tr><td><em>Day [4]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C04%3E" target="_blank">
     <b>Number of minimum picks to get 'k' pairs of socks from a drawer</b>    </a></td> <td align="center">
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isHard.png" alt="Day [4]" height="30" width="90" align="center"></td></tr>
+    <tr><td><em>Day [5]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C05%3E" target="_blank">
+    <b>Spiral Matrix</b>    </a></td> <td align="center">
+       <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [5]" height="30" width="90" align="center"></td></tr>
     
 </table>
