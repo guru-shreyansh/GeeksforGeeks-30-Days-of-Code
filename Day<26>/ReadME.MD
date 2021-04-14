@@ -4,7 +4,7 @@
 `DFS`
 `Graph`
 `Sorting`
-<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C20%3E/D20.png">
+<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C20%3E/D26.png">
 ________________________________________________________________________________________________________________________________________________________
 <h3>:heavy_check_mark: Day 20</h3>
 <blockquote>An IT company is working on a large project. The project is broken into N modules and distributed to different teams. The amount of time (in months) required to complete each module is given in an array duration[ ] i.e. time needed to complete ith module is duration[i] months. 
