@@ -34,40 +34,40 @@ Can you help Geek encrypt his message string S?
 ###      ∑ HINTS ▸
 - [x] _Find the longest proper prefix which is also a proper suffix for each prefix of the string._
 ```java
-        public String compress(String s)
+    public String compress(String s)
+    {
+	int i=0, n = s.length();
+	ArrayList<Integer> sub = new ArrayList<>(n);
+	for (i=0; i<n; i++)
+        sub.add(0);
+	StringBuilder secC = new StringBuilder("");
+	for (i=1; i<n; i++)
 	{
-	    int i=0, n = s.length();
-	    ArrayList<Integer> sub = new ArrayList<>(n);
-	    for (i=0; i<n; i++)
-            sub.add(0);
-	    StringBuilder secC = new StringBuilder("");
-	    for (i=1; i<n; i++)
-	    {
-	        int j = sub.get(i-1);
-	        while (0 < j && s.charAt(i) != s.charAt(j))
-	            j = sub.get(j-1);
-	        if (s.charAt(i) == s.charAt(j))
-	            j++;
+	    int j = sub.get(i-1);
+	    while (0 < j && s.charAt(i) != s.charAt(j))
+	        j = sub.get(j-1);
+	    if (s.charAt(i) == s.charAt(j))
+	        j++;
 	        sub.set(i,j);
-	    }
-	    for (i=n-1; 0<=i; i--)
+	}
+	for (i=n-1; 0<=i; i--)
+	{
+	    if (i%2 == 1)
 	    {
-	        if (i%2 == 1)
+	        if ( (i+1)/2<=sub.get(i) && (i+1)%(2*(i+1-sub.get(i)))==0 )
 	        {
-	            if ( (i+1)/2<=sub.get(i) && (i+1)%(2*(i+1-sub.get(i)))==0 )
-	            {
-	                secC.append( "*" );
-	                i /= 2;
-	                ++i;
-	            }
-	            else 
-	                secC.append(s.charAt(i));
+	            secC.append( "*" );
+	            i /= 2;
+	            ++i;
 	        }
 	        else 
 	            secC.append(s.charAt(i));
 	    }
-	    return secC.reverse().toString();
+	    else 
+	        secC.append(s.charAt(i));
 	}
+	return secC.reverse().toString();
+    }
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
