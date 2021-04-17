@@ -34,60 +34,31 @@ Can you help Geek encrypt his message string S?
 ###      ∑ HINTS ▸
 - [x] _Find the longest proper prefix which is also a proper suffix for each prefix of the string._
 ```java
-    public String Compress(String s)
-    {
-        String sub = s.substring( 0,1 );
-	    StringBuilder encrypted = new StringBuilder(sub);
-	    
-	    int i = 1;
-	    while ( i<s.length() )
-	    {
-	        if ( s.indexOf(sub , i-1) != i )
-	        {
-	            sub = sub + String.valueOf(s.charAt(i));
-	            encrypted.append(String.valueOf(s.charAt(i)));
-	            ++i; continue;
-	        }
-	        if ( s.indexOf(sub , i-1) == i )
-	        {
-	            while(s.indexOf((sub+sub),i+sub.length()-1) == sub.length()+1)
-	            {
-	                sub = sub + sub;
-	                encrypted.append(sub);
-	                i = i+sub.length();
-	            }
-	            encrypted.append("*");
-	            sub = sub + sub;
-	            i = sub.length();
-	        }
-	    }
-	    return sub.toString();
-    	}
-	public String compress(String s)
+        public String compress(String s)
 	{
 	    int i=0, n = s.length();
-        ArrayList<Integer> pi = new ArrayList<Integer>(n);
+	    ArrayList<Integer> sub = new ArrayList<>(n);
 	    for (i=0; i<n; i++)
-            pi.add(0);
+            sub.add(0);
 	    StringBuilder secC = new StringBuilder("");
-	    for (i = 1; i < n; i++)
+	    for (i=1; i<n; i++)
 	    {
-	        int j = pi.get(i-1);
-	        while (j > 0 && s.charAt(i) != s.charAt(j))
-	            j = pi.get(j-1);
+	        int j = sub.get(i-1);
+	        while (0 < j && s.charAt(i) != s.charAt(j))
+	            j = sub.get(j-1);
 	        if (s.charAt(i) == s.charAt(j))
 	            j++;
-	        pi.set(i,j);
+	        sub.set(i,j);
 	    }
-	    for(i=n-1; i>=0; i--)
+	    for (i=n-1; 0<=i; i--)
 	    {
-	        if(i%2 == 1)
+	        if (i%2 == 1)
 	        {
-	            if( pi.get(i)>=(i+1)/2 && (i+1)%(2*(i+1-pi.get(i)))==0 )
+	            if ( (i+1)/2<=sub.get(i) && (i+1)%(2*(i+1-sub.get(i)))==0 )
 	            {
 	                secC.append( "*" );
-	                i/=2;
-	                i++;
+	                i /= 2;
+	                ++i;
 	            }
 	            else 
 	                secC.append(s.charAt(i));
