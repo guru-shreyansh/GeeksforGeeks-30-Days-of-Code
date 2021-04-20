@@ -53,5 +53,8 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
     <tr><td><em>Day [14]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C14%3E" target="_blank">
     <b>Ruling Pair</b>    </a></td> <td align="center">
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [14]" height="30" width="90" align="center"></td></tr>
+    <tr><td><em>Day [15]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C15%3E" target="_blank">
+    <b>Count Triplets</b>    </a></td> <td align="center">
+       <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [15]" height="30" width="90" align="center"></td></tr>
     
 </table>
