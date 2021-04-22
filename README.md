@@ -59,5 +59,8 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
     <tr><td><em>Day [16]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C16%3E" target="_blank">
     <b>Restrictive Candy Crush</b>    </a></td> <td align="center">
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [16]" height="30" width="90" align="center"></td></tr>
+    <tr><td><em>Day [17]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C17%3E" target="_blank">
+    <b>Help Classmates</b>    </a></td> <td align="center">
+       <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [17]" height="30" width="90" align="center"></td></tr>
     
 </table>
