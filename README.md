@@ -62,5 +62,8 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
     <tr><td><em>Day [17]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C17%3E" target="_blank">
     <b>Help Classmates</b>    </a></td> <td align="center">
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [17]" height="30" width="90" align="center"></td></tr>
+    <tr><td><em>Day [18]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C18%3E" target="_blank">
+    <b>132 Geeky Buildings</b>    </a></td> <td align="center">
+       <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isHard.png" alt="Day [18]" height="30" width="90" align="center"></td></tr>
     
 </table>
