@@ -74,5 +74,8 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
     <tr><td><em>Day [21]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C21%3E" target="_blank">
     <b>Corona Vaccine</b>    </a></td> <td align="center">
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isHard.png" alt="Day [21]" height="30" width="90" align="center"></td></tr>
+    <tr><td><em>Day [22]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C22%3E" target="_blank">
+    <b>Shortest Range In BST</b>    </a></td> <td align="center">
+       <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isHard.png" alt="Day [22]" height="30" width="90" align="center"></td></tr>
     
 </table>
