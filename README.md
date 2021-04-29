@@ -77,5 +77,8 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
     <tr><td><em>Day [22]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C22%3E" target="_blank">
     <b>Shortest Range In BST</b>    </a></td> <td align="center">
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isHard.png" alt="Day [22]" height="30" width="90" align="center"></td></tr>
+    <tr><td><em>Day [23]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C23%3E" target="_blank">
+    <b>Lucy's Neighbours</b>    </a></td> <td align="center">
+       <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [23]" height="30" width="90" align="center"></td></tr>
     
 </table>
