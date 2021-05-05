@@ -89,5 +89,8 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
     <tr><td><em>Day [26]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C26%3E" target="_blank">
     <b>Project Manager</b>    </a></td> <td align="center">
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [26]" height="30" width="90" align="center"></td></tr>
+    <tr><td><em>Day [27]: </td><td align="center"><a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C27%3E" target="_blank">
+    <b>Police and Thieves</b>    </a></td> <td align="center">
+       <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [27]" height="30" width="90" align="center"></td></tr>
     
 </table>
