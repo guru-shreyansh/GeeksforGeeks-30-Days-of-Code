@@ -1,11 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-class GURU
+class GFG
 {
     public static void main (String[] args)
     {
-	  Scanner ob=new Scanner(System.in);
+	  Scanner ob = new Scanner(System.in);
 	  int t = ob.nextInt();
 	  while (t-->0)
 	  {
@@ -23,7 +23,7 @@ class Solution
     {
         String s = "";
         // taking remainders by 9 till 'N' become 0
-        while (N!=0)
+        while ( N!=0 )
         {
             s = (char)( N%9 + '0' ) + s;
             N = N/9;
