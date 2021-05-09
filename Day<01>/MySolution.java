@@ -6,7 +6,7 @@ class GURU
     {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(read.readLine());
-        
+
         while (t-- > 0)
         {
             int n = Integer.parseInt(read.readLine());
@@ -15,8 +15,8 @@ class GURU
             for (int i=0; i<n; i++)
                 a[i] = Long.parseLong(input_line[i]);
 
-            Solution ob = new Solution();
-            ob.prank(a, n);
+            Solution obj = new Solution();
+            obj.prank(a, n);
 
             for (int i=0; i<n; i++)
                 System.out.print(a[i]+" ");
