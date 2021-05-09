@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 class GURU
 {
-    public static void main(String args[]) throws IOException
+    public static void main(String args[]) throws Exception
     {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(read.readLine());
