@@ -1,10 +1,10 @@
 class Solution:
     def prank(self, a, n):
         for i in range(n):
-            a[i] = a[i] + (a[a[i]]%n) * n
+            a[i] = a[i] + (a[a[i]] % n) * n
 
         for i in range(n):
-            a[i] = a[i]//n
+            a[i] = a[i] // n
 
 if __name__ == '__main__':
     t = int(input())
