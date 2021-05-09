@@ -5,7 +5,7 @@ class GURU
 {
     public static void main (String[] args)
     {
-	  Scanner ob=new Scanner(System.in);
+	  Scanner ob = new Scanner(System.in);
 	  int t = ob.nextInt();
 	  while (t-->0)
 	  {
