@@ -11,8 +11,8 @@ if __name__ == '__main__':
     for _ in range(t):
         n = int(input())
         a = list(map(int, input().strip().split()))
-        ob = Solution()
-        ob.prank(a, n)
+        obj = Solution()
+        obj.prank(a, n)
         for i in a:
             print(i, end=" ")
         print()
