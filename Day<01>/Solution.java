@@ -22,7 +22,7 @@ class GFG
                 System.out.print(a[i]+" ");
             System.out.println();
         }
-    } 
+    }
 } // Driver Code Ends
 
 class Solution
