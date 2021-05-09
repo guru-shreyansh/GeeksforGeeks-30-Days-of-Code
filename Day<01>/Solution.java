@@ -15,8 +15,8 @@ class GFG
             for (int i=0; i<n; i++)
                 a[i] = Long.parseLong(input_line[i]);
 
-            Solution ob = new Solution();
-            ob.prank(a, n);
+            Solution obj = new Solution();
+            obj.prank(a, n);
 
             for (int i=0; i<n; i++)
                 System.out.print(a[i]+" ");
