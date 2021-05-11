@@ -41,9 +41,9 @@ long smallestpositive(long[] array, int n)
 {
     Arrays.sort(array);
     long currNumber = 1L;               // Minimum positive output
-    for(int i=0; i<array.length; i++)
+    for (int i=0; i<array.length; i++)
     {
-        if(array[i] <= currNumber)
+        if (array[i] <= currNumber)
             currNumber += array[i];
         else 
             break;
