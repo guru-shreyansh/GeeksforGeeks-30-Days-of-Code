@@ -3,7 +3,7 @@ class Solution:
         array.sort()
         result = 1
         for i in range(n):
-            if(array[i] <= result):
+            if array[i] <= result:
                 result = result + array[i]
         return result
 
