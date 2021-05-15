@@ -1,8 +1,7 @@
 class Solution:
     def Maximum_Sum(self, mat, N, K):
-        
         sum_matrix = [[0 for _ in range(N) ] for _ in range(N)]
-        
+
         for r in range(N):
             for c in range(N):
                 sum_matrix[r][c] = mat[r][c]
