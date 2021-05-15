@@ -41,7 +41,7 @@ ________________________________________________________________________________
 ###      ∑ HINTS ▸
 - [x] _Apply 2d prefix sum_
 ```java
-public int Maximum_Sum(int mat[][], int n, int k)
+    public int Maximum_Sum(int mat[][], int n, int k)
     {
         int[][] preSUM = new int[n-k+1][n]; // Array to store sum of all vertical 
         int i=0, j=0;                       //      sub-matrices of size 1*K
@@ -68,6 +68,7 @@ public int Maximum_Sum(int mat[][], int n, int k)
             }
         }
         return max;
+    }
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
