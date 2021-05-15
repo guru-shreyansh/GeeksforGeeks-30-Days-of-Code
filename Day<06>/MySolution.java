@@ -1,30 +1,30 @@
 import java.io.*;
 import java.util.*;
 
-class GFG {
-	public static void main (String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		int t = Integer.parseInt(sc.next());
-		while(t-- > 0)
+class GURU
+{
+    public static void main (String[] args)
+    {
+	Scanner sc = new Scanner(System.in);
+	int t = Integer.parseInt(sc.next());
+	while(t-- > 0)
+	{
+	    int n = Integer.parseInt(sc.next());
+	    int a[][] = new int[n][n];
+		    
+	    for(int i=0;i<n;i++)
+	    {
+		for(int j=0;j<n;j++)
 		{
-		    int n = Integer.parseInt(sc.next());
-		    int a[][] = new int[n][n];
-		    
-		    for(int i=0;i<n;i++)
-		    {
-		        for(int j=0;j<n;j++)
-		        {
-		            a[i][j] = Integer.parseInt(sc.next());
-		        }
-		    }
-		    
-		    int k = Integer.parseInt(sc.next());
-		    Solution T = new Solution();
-		    System.out.println(T.Maximum_Sum(a,n,k));
+		    a[i][j] = Integer.parseInt(sc.next());
 		}
+	    }
+	    int k = Integer.parseInt(sc.next());
+	    Solution T = new Solution();
+	    System.out.println(T.Maximum_Sum(a,n,k));
 	}
-}// } Driver Code Ends
+    }
+}
 class Solution
 {
     public int Maximum_Sum(int mat[][], int n, int k)
