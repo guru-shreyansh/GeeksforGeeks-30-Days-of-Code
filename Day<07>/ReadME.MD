@@ -38,51 +38,51 @@ ________________________________________________________________________________
 - [x] _For every positive number array[i], binary search for first element (let say index be j) ≥ (-array[i] + 1)_
 - [x] _All values between [i, j] are valid pairs with their sum > 0_
 ```java
-  static long ValidPair(int arr[], int n)
-	{
-	    boolean allPositive = true, allNonPositive = true; int i=0;
-	    for (i=0; i<n; i++) if (arr[i] < 1) allPositive = false;
-	    for (i=0; i<n; i++) if (0 < arr[i]) allNonPositive = false;
-	    if (allPositive)    return (long)n*((long)n-1L)/2L;
-	    if (allNonPositive) return 0;
+static long ValidPair(int arr[], int n)
+{
+    boolean allPositive = true, allNonPositive = true; int i=0;
+    for (i=0; i<n; i++) if (arr[i] < 1) allPositive = false;
+    for (i=0; i<n; i++) if (0 < arr[i]) allNonPositive = false;
+    if (allPositive)    return (long)n*((long)n-1L)/2L;
+    if (allNonPositive) return 0;
 	        
-	    // If all elements are +ve (>=1)
-	    // If all elements are -ve or 0 (<=0)
+    // If all elements are +ve (>=1)
+    // If all elements are -ve or 0 (<=0)
 	    
-	    Arrays.sort(arr);
-	    int j=0, key=0, end=n-1;
-	    long validPairs = 0L;
+    Arrays.sort(arr);
+    int j=0, key=0, end=n-1;
+    long validPairs = 0L;
 	    
-	    for (i=1; i<n; i++)
-	    {
-	        if (arr[i] <= 0)
-	            continue;
-	        j=0;
-	        key = -arr[i];
-	        j = FirstElementStrictlyGreaterThanTheKey(arr,key,0,end);
+    for (i=1; i<n; i++)
+    {
+        if (arr[i] <= 0)
+	    continue;
+	j=0;
+	key = -arr[i];
+	j = FirstElementStrictlyGreaterThanTheKey(arr,key,0,end);
 	        
-	        end = j;                       // Storing the position of found key
-	        validPairs += (long)(i-j);          // to optimize the code
-	    }
-	    return validPairs;
-	}
-	
-	static int FirstElementStrictlyGreaterThanTheKey(int[] arr, int key, int start, int end)
-	{
-        int pos = -1;
-        while (start <= end)
-        {
-            int mid = (start + end) / 2;
-            if (arr[mid] <= key)
-                start = mid + 1;
-            else
-            {
-                pos = mid;
-                end = mid - 1;
-            }
-        }
-        return pos;
+	end = j;                       // Storing the position of found key
+	validPairs += (long)(i-j);          // to optimize the code
     }
+    return validPairs;
+}
+	
+static int FirstElementStrictlyGreaterThanTheKey(int[] arr, int key, int start, int end)
+{
+    int pos = -1;
+    while (start <= end)
+    {
+        int mid = (start + end) / 2;
+        if (arr[mid] <= key)
+            start = mid + 1;
+        else
+        {
+            pos = mid;
+            end = mid - 1;
+        }
+    }
+    return pos;
+}
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
