@@ -30,7 +30,7 @@ Help Harry calculates minimum number of times he needs to use the spell to chang
 
 <table align="center">
       <tr><td><em><b>Expected Time Complexity</td> <td><em><b>Expected Auxiliary Space</td></tr>
-      <tr><td align="center">O(max(|A|, |B|)</td> <td align="center">O(1)</td></tr>
+      <tr><td align="center">O(max(|A| , |B|)</td> <td align="center">O(1)</td></tr>
 </table>
 
 #### < Constraints >
@@ -41,35 +41,35 @@ Help Harry calculates minimum number of times he needs to use the spell to chang
 - [x] _Firsly, we need to check whether such a conversion is possible or not, the frequency of all the elements in A must be same as the frequency of all the elements in B._
 - [x] _Start matching from last characters of both strings. If last characters match, then our task reduces to remaining characters. If last characters don’t match, then find the position of B’s mismatching character in A. The difference between two positions indicates that these many characters of A must be moved._
 ```java
-    int transfigure(String A, String B)
+int transfigure(String A, String B)
+{
+    int i = 0, j = 0;
+    int len = A.length();
+    if ( len != B.length() ) return -1;
+    	
+    char[] aaa = new StringBuilder(A).reverse().toString().toCharArray();
+    char[] bbb = new StringBuilder(B).reverse().toString().toCharArray();
+    int[] freq = new int[128];
+    	
+    for (i = 0; i<len; i++)     ++freq[ (int)aaa[i] ];
+    for (i = 0; i<len; i++)     --freq[ (int)bbb[i] ];
+    for (i = 0; i<128; i++)
+    	  if ( freq[i] != 0 )
+    	      return -1;
+    	
+    int matched = 0; i=j=0;
+    while ( j<len )
     {
-        int i = 0, j = 0;
-        int len = A.length();
-        if ( len != B.length() ) return -1;
-    	
-    	char[] aaa = new StringBuilder(A).reverse().toString().toCharArray();
-    	char[] bbb = new StringBuilder(B).reverse().toString().toCharArray();
-    	int[] freq = new int[128];
-    	
-    	for (i = 0; i<len; i++)     ++freq[ (int)aaa[i] ];
-    	for (i = 0; i<len; i++)     --freq[ (int)bbb[i] ];
-    	for (i = 0; i<128; i++)
-    	    if ( freq[i] != 0 )
-    	        return -1;
-    	
-    	int matched = 0; i=j=0;
-    	while ( j<len )
-    	{
-    	    while ( j<len && bbb[i]!=aaa[j] )
-    	        ++j;
-    	    if ( j<len )
-    	    {
-    	        ++i; ++j;
-    	        ++matched;
-    	    }
-    	}
-    	return len - matched;
+    	  while ( j<len && bbb[i]!=aaa[j] )
+    	      ++j;
+    	  if ( j<len )
+    	  {
+    	      ++i; ++j;
+    	      ++matched;
+    	  }
     }
+    return len - matched;
+}
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
