@@ -1,21 +1,22 @@
 import java.io.*;
 import java.util.*;
-class GfG
+class GURU
 {
     public static void main(String args[])throws IOException
+    {
+        BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
+        int t = Integer.parseInt(br.readLine());
+        while (t-->0)
         {
-            BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
-            int t = Integer.parseInt(br.readLine());
-            while(t-->0)
-                {
-                    String arr[] = br.readLine().split(" ");
-                    String A = arr[0];
-                    String B = arr[1];
-                    Solution obj = new Solution();
-                    System.out.println(obj.transfigure (A, B));
-                }
-        }
-}// } Driver Code Ends
+            String arr[] = br.readLine().split(" ");
+            String A = arr[0];
+            String B = arr[1];
+            Solution obj = new Solution();
+            System.out.println(obj.transfigure (A, B));
+       }
+    }
+}
+
 class Solution
 {
     int transfigure(String A, String B)
