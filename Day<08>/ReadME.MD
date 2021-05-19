@@ -36,26 +36,27 @@ ________________________________________________________________________________
 - [x] _The aim is to maximize the area formed between the 2 vertical books. The shorter book forms the length of the candy dam and the distance between the books is the width of the rectangle._
 - [x] _Use two pointer approach. Start with the maximum width possible for the candy dam, ie first and last book. Go to a shorter width only if there is a book longer than the current book._
 ```java
-  static int maxCandy(int height[], int n)
-	{
-	    if ( n < 3 )    return 0;
-	    int start = 0;
-	    int end = n-1;
-	    int currArea = 0;
-	    int maxFound = ( n-2 )*( Math.min(height[0] , height[n-1]) );
+static int maxCandy(int height[], int n)
+{
+    if ( n < 3 )    return 0;
+    int start = 0;
+    int end = n-1;
+    int currArea = 0;
+    int maxFound = ( n-2 )*( Math.min(height[0] , height[n-1]) );
 	    
-	    while ( start < end )
-	    {
-	        currArea = Math.min(height[start] , height[end]) * (end-start-1);
-	        maxFound = Math.max(currArea , maxFound);
+    while ( start < end )
+    {
+    	currArea = Math.min(height[start] , height[end]) * (end-start-1);
+	maxFound = Math.max(currArea , maxFound);
 	        
-	        if ( height[start] < height[end] )
-	            ++start;
-	        else 
-	            --end;
-	    }
-	    return maxFound;
+	if ( height[start] < height[end] )
+	    ++start;
+	else 
+	    --end;
 	}
+	return maxFound;
+    }
+}
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
