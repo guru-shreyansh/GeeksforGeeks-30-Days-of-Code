@@ -7,21 +7,21 @@ class Solution
     int transfigure (string A, string B)
     {
         if (A.length () != B.length ())
-    	   {
+        {
             return -1;
         }
      
         unordered_map <char, int> m;
-    	   int n = A.length ();
+    	int n = A.length ();
     
-    	   for	(int i = 0; i < n; i++)
+    	for	(int i = 0; i < n; i++)
             m[A[i]]++;
         for (int i = 0; i < n; i++)
-    		      if (m[B[i]]--);
+            if (m[B[i]]--);
     
-    	   for (auto i : m)
-    	   {
-    		      if (i.second != 0)
+    	for (auto i : m)
+    	{
+    	    if (i.second != 0)
             {
                 return -1;
             }
