@@ -14,7 +14,7 @@ class Solution
         unordered_map <char, int> m;
     	int n = A.length ();
     
-    	for	(int i = 0; i < n; i++)
+    	for (int i = 0; i < n; i++)
             m[A[i]]++;
         for (int i = 0; i < n; i++)
             if (m[B[i]]--);
