@@ -32,28 +32,27 @@ ________________________________________________________________________________
 ###      ∑ HINTS ▸
 - [x] _Let count = B.length() / A.length(). Now check whether B is a substring of A*count or A*(count+1)_
 ```java
-   static int repeatedStringMatch(String A, String B) 
-	{
-	    if ( A.indexOf(B) != -1 )
-	        return 1;
+static int repeatedStringMatch(String A, String B) 
+{
+    if ( A.indexOf(B) != -1 )
+        return 1;
 	    
-	    StringBuilder aaa = new StringBuilder("");
-	    StringBuilder bbb = new StringBuilder("");
+    StringBuilder aaa = new StringBuilder("");
+    StringBuilder bbb = new StringBuilder("");
 	    
-	    int length = B.length()+A.length();
-	    int repeated = 0;
+    int length = B.length()+A.length();
+    int repeated = 0;
 	    
-	    while ( (aaa.indexOf(B) == -1) && (aaa.length() < length) )
-	    {
-	        aaa.append(A);
-	        ++repeated;	     
-	    }
+    while ( (aaa.indexOf(B) == -1) && (aaa.length() < length) )
+    {
+        aaa.append(A);
+        ++repeated;	     
+    }
 	    
-	    if ( aaa.indexOf(B) == -1 )
-	            return -1;
-	    
-	    return repeated;
-	}
+    if ( aaa.indexOf(B) == -1 )
+        return -1;   
+    return repeated;
+}
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
