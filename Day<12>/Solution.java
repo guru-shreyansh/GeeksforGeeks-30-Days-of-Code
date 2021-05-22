@@ -10,7 +10,7 @@ class GfG
         {
             int n = sc.nextInt();
             int arr[] = new int[n];
-            for (int i = 0 ;i<n;i++)
+            for (int i=0; i<n; i++)
                 arr[i] = sc.nextInt();
                     
             Solution obj = new Solution();
@@ -24,7 +24,6 @@ class Solution
     public static long sumBitDiff(int arr[], int n)
     {
         long ans = 0;  // Initialize result
-
         // traverse over all bits
         for (int i = 0; i < 32; i++)
         {
