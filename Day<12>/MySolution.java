@@ -1,25 +1,24 @@
 import java.io.*;
 import java.util.*;
-class GfG
+class GURU
 {
     public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-->0)
         {
-            Scanner sc = new Scanner(System.in);
-            int t = sc.nextInt();
-            while(t-->0)
-                {
-                    int n = sc.nextInt();
-                    int arr[] = new int[n];
-                    for(int i = 0 ;i<n;i++)
-                        arr[i] = sc.nextInt();
+            int n = sc.nextInt();
+            int arr[] = new int[n];
+            for(int i = 0 ;i<n;i++)
+                arr[i] = sc.nextInt();
                     
-                    Solution obj = new Solution();
-                    System.out.println(obj.sumBitDiff(arr,n));
-                }
+            Solution obj = new Solution();
+            System.out.println(obj.sumBitDiff(arr,n));
         }
+    }
 }
 
-// } Driver Code Ends
 class Solution
 {
     public static long sumBitDiff(int arr[], int n)
