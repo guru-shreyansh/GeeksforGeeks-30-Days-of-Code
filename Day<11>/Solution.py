@@ -24,8 +24,7 @@ class Solution:
         n=len(s)
         i=n-1
         
-        #  for even index, string length is odd
-        #  hence it cannot be divided into two
+        #  for even index, string length is odd hence it cannot be divided into two
         #  so we simply push ith character in stack
         while(i>0):
             if(i%2==0):
@@ -37,13 +36,11 @@ class Solution:
             # can be divided into identical halves
             star_here=False
             
-            #  suffix and substring length are also meant for
-            #  substring s[0] to s[i]
+            #  suffix and substring length are also meant for substring s[0] to s[i]
             suffix=a[i]
             substrlen=i+1
             
-            #  these conditions, if true, imply that, substring
-            #  can be divided into 2 identical halves
+            #  these conditions, if true, imply that, substring can be divided into 2 identical halves
             if(suffix*2>=substrlen):
                 if(substrlen%(substrlen-suffix)==0):
                     if((substrlen/(substrlen-suffix))%2==0):
@@ -63,18 +60,13 @@ class Solution:
         ret=ret+s[0]
         n=len(shortened)
         
-        #  since we analysed input string from end to start
-        #  removing elements from stack and pushing back to
+        #  since we analysed input string from end to start removing elements from stack and pushing back to
         #  output string will reverse them back to required order
         while(n):
             ret=ret+shortened[n-1]
             shortened.pop()
             n=n-1
         return ret
-
-#{ 
-#  Driver Code Starts
-#Initial Template for Python 3
 
 
 t=int(input())    
