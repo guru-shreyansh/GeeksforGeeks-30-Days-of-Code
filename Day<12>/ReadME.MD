@@ -36,29 +36,29 @@ For example, bit difference for 2 and 7 is 2. Binary representation of 2 is 010 
 ###      ∑ HINTS ▸
 - [x] _Find some mathematical formula using information of total number of set bits in all the numbers at a particular ith bit position._
 ```java
-    public static long sumBitDiff(int arr[], int n)
-    {                                             // O( NlogN ) Solution
-        long even = 0L;
-        long zeros = 0L;
-        long diffSum = 0L;
-        for ( int i=1; i<=32; i++ )
+public static long sumBitDiff(int arr[], int n)
+{                                             // O( NlogN ) Solution
+    long even = 0L;
+    long zeros = 0L;
+    long diffSum = 0L;
+    for ( int i=1; i<=32; i++ )
+    {
+        even = 0L;
+        zeros = 0L;
+        for ( int j=0; j<n; j++ )
         {
-            even = 0L;
-            zeros = 0L;
-            for ( int j=0; j<n; j++ )
-            {
-                if ( arr[j] % 2 == 0 )
-                    ++even;
-                if ( arr[j] == 0 )
-                    ++zeros;
-                arr[j] /= 2;
-            }
-            if ( zeros == n )
-                return 2*diffSum;
-            diffSum += (even) * (n-even);
+            if ( arr[j] % 2 == 0 )
+                ++even;
+            if ( arr[j] == 0 )
+                ++zeros;
+            arr[j] /= 2;
         }
-        return 2*diffSum;
+        if ( zeros == n )
+            return 2*diffSum;
+        diffSum += (even) * (n-even);
     }
+    return 2*diffSum;
+}
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
