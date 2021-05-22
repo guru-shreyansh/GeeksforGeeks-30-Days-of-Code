@@ -37,7 +37,7 @@ class Solution
 	    {
 	        while (s.indexOf((sub+sub),i+sub.length()-1) == sub.length()+1)
 	        {
-	            sub = sub + sub;
+	            sub += sub;
 	            encrypted.append(sub);
 	            i = i+sub.length();
 	        }
