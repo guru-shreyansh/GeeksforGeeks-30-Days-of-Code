@@ -39,7 +39,7 @@ public String compress(String s)
     int i=0, n = s.length();
     ArrayList<Integer> sub = new ArrayList<>(n);
     for (i=0; i<n; i++)
-    sub.add(0);
+        sub.add(0);
     StringBuilder secC = new StringBuilder("");
     for (i=1; i<n; i++)
     {
@@ -59,7 +59,7 @@ public String compress(String s)
 	        secC.append( "*" );
 	        i /= 2;
 	        ++i;
-	        }
+	    }
 	    else 
 	        secC.append(s.charAt(i));
 	}
