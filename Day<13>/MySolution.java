@@ -52,7 +52,7 @@ class Solution
         postOrder(root,list);
         int myPost[] = new int[len];
         for (int i=0; i<len; i++)
-            myPost[i]=l.get(i);
+            myPost[i]=list.get(i);
         for (int i=0; i<len; i++)
             if (myPost[i] != postorder[i])
                 return false;
@@ -63,8 +63,8 @@ class Solution
     {
         if (root==null) return;
         
-        postOrder(root.left,l);
-        postOrder(root.right,l);
+        postOrder(root.left,list);
+        postOrder(root.right,list);
         list.add(root.data);
     }
     static TreeNode buildTree(int[] pre, int in[], int l, int r)
