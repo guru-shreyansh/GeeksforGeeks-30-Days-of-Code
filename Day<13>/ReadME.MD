@@ -67,11 +67,11 @@ class Solution
         postOrder(root,list);
         int myPost[] = new int[len];
         for (int i=0; i<len; i++)
-          myPost[i]=l.get(i);
+            myPost[i]=l.get(i);
         for (int i=0; i<len; i++)
-          if (myPost[i] != postorder[i])
-           return false;
-          
+            if (myPost[i] != postorder[i])
+                return false;
+         
         return true;
     }
     static void postOrder(TreeNode root, List<Integer> list)
@@ -81,7 +81,6 @@ class Solution
         postOrder(root.left,l);
         postOrder(root.right,l);
         list.add(root.data);
-        
     }
     static TreeNode buildTree(int[] pre, int in[], int l, int r)
     {
