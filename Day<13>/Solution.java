@@ -6,7 +6,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class GURU
+class GfG
 {
     public static void main(String args[])
     {
