@@ -2,10 +2,6 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
 class GfG
 {
     public static void main(String args[])
@@ -33,6 +29,7 @@ class GfG
         }
     }
 }
+
 class Solution
 {
     static boolean check(int preorder[], int i1, int inorder[], int i2, int postorder[], int i3, int len)
@@ -40,7 +37,7 @@ class Solution
         if (len==0) return true;
         
         // if array lengths are 1, then check if all of them are equal
-        if(len==1) return ( (preorder[i1]==inorder[i2]) && (inorder[i2] == postorder[i3]) );
+        if(len==1) return ( (preorder[i1]==inorder[i2]) && (inorder[i2]==postorder[i3]) );
         
         // search for first element of preorder in inorder array
         int idx=-1;
