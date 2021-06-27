@@ -34,7 +34,7 @@ ________________________________________________________________________________
 ###      ∑ HINTS ▸
 - [x] _Traverse through the array and use a unordered_map to store the maximum number present for a particular digit sum._
 ```java
-  static int RulingPair(int arr[], int n)
+        static int RulingPair(int arr[], int n)
 	{
 	    int[] map = new int[76];            // Map with indexes as possible digit sum
 	    int maxPair = -1;
