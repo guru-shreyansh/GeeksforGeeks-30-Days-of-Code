@@ -1,28 +1,30 @@
 import java.io.*;
 import java.util.*; 
-class GFG{
-    public static void main(String args[]) throws IOException { 
+class GFG
+{
+    public static void main(String args[]) throws IOException
+    { 
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 
-        while(t > 0){
-        	int n = sc.nextInt();
+        while (0 < t)
+	    {
+            int n = sc.nextInt();
         	int array[] = new int[n];
-        	for (int i=0; i<n ; i++ ) {
-        		array[i] = sc.nextInt();
-        	}
+        	for (int i=0; i<n ; i++ )
+        	    array[i] = sc.nextInt();
             Solution ob = new Solution();
             System.out.println(ob.RulingPair(array,n));
             t--;
         }
     } 
 } 
-      // } Driver Code Ends
+
 class Solution
 {
 	static int RulingPair(int arr[], int n)
 	{
-	    int[] map = new int[76];            // Map with indexes as possible digit sum
+	    int[] map = new int[76];          // Map with indexes as possible digit sum
 	    int maxPair = -1;
 	    int value = 0;
 	    for (int temp : arr)
@@ -33,7 +35,7 @@ class Solution
 	            value = map[sumOfDigits];
 	            maxPair = Math.max(maxPair, value+temp);
 	            if (value < temp)                       // Replacing the element if current value
-	                map[sumOfDigits] = temp;            // is greater than the previous value
+	                map[sumOfDigits] = temp;              // is greater than the previous value
 	        }
 	        else 
 	            map[sumOfDigits] = temp;
