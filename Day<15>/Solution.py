@@ -29,10 +29,6 @@ def countTriplets(head,x):
         head = head.nxt
     return ret
 
-#{ 
-#  Driver Code Starts
-#Initial Template for Python 3
-
 class Node:
     def __init__(self,x):
         self.val=x
