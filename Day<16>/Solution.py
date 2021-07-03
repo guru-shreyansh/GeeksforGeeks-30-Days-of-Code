@@ -7,7 +7,6 @@ class Solution:
             return ret
         
         q = deque()
-        
         for c in s:
             # entries in deque will consist of a char
             # and an integer representing how many times it is repeating
@@ -24,11 +23,6 @@ class Solution:
             q.popleft()
         
         return ret
-
-
-#{ 
-#  Driver Code Starts
-#Initial Template for Python 3
 
 if __name__=="__main__":
     t=int(input())
