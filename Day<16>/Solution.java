@@ -1,43 +1,42 @@
 import java.util.*;
 import java.math.*;
 
-class Gfg
+class GfG
 {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
         int t = Integer.parseInt(sc.next());
-        while(t-- > 0)
+        while (t-- > 0)
         {
             int k = Integer.parseInt(sc.next());
             String s = sc.next();
             Solution T = new Solution();
             System.out.println(T.reduced_String(k, s));
-            
         }
     }
 }
-// } Driver Code Ends
 
 class Solution
 {
     public static String reduced_String(int k, String s)
     {
-        if(k == 1){
+        if (k == 1)
+        {
             String ans = "";
             return ans;
         }
         Stack<Pair> st = new Stack<Pair>();
         int l = s.length();
         int ctr = 0;
-        for(int i=0;i<l;i++)
+        for (int i=0; i<l; i++)
         {
-            if(st.size() == 0)
+            if (st.size() == 0)
             {
                 st.push(new Pair(s.charAt(i),1));
                 continue;
             }
-            if(st.peek().c == s.charAt(i))
+            if (st.peek().c == s.charAt(i))
             {
                 Pair p = st.peek();
                 st.pop();
@@ -51,23 +50,25 @@ class Solution
                     st.push(p);
                 }
             }
-            else{
+            else
+            {
                  st.push(new Pair(s.charAt(i),1));
             }
         }
         String ans = "";
-        while(st.size() > 0)
+        while (st.size() > 0)
         {
             char c = st.peek().c;
             int cnt = st.peek().ctr;
-            while(cnt-- > 0)
+            while (cnt-- > 0)
                 ans = c + ans;
             st.pop();
         }
         return ans;
     }
 }
-class Pair{
+class Pair
+{
     char c;
     int ctr;
     Pair(char c,int ctr)
