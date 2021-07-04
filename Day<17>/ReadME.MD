@@ -39,7 +39,7 @@ Output shows the marks of the weaker student that each roll number helps in orde
 - [x] _Use a stack to compare elements. Loop through the contents of the given array and compare it to the top of stack. If top of stack is bigger than current element that means that current element is the next smallest element for the element in the stack. If not, add the current element to the stack._
 - [x] _To maintain the order of the given array, store the index of elements in the stack instead of the value._
 ```java
-  public static int[] help_classmate(int arr[], int n) 
+    public static int[] help_classmate(int arr[], int n) 
 	{
 	    int j=1;
 	    int[] help = new int[n];
