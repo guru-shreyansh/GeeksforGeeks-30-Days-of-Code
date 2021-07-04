@@ -6,15 +6,11 @@ class Solution:
         ret = [-1 for _ in range(n)]
         
         for i in range(n):
-            while len(stack) and arr[i] < arr[stack[-1]] :
+            while len(stack) and arr[i] < arr[stack[-1]]:
                 ret[ stack.pop() ] = arr[i]
             stack.append(i)
         
         return ret
-
-#{ 
-#  Driver Code Starts
-#Initial Template for Python 3
 
 if __name__=="__main__":
     for _ in range(int(input())):
