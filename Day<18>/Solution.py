@@ -3,7 +3,6 @@ from math import inf
 class Solution:
 	def recreationalSpot(self, arr, n):
 	    l=[]
-
 	    if len(arr)<=2:
 	        return False
 	    if len(arr)==3:
@@ -16,12 +15,11 @@ class Solution:
 	        return True
 	    
 	    temp=[inf]*n
-	    
 	    temp[0]=arr[0]
 	    
 	    for i in range(n):
 	        temp[i]=min(temp[i-1],arr[i])
-	        
+	    
 	    for j in range(n-1,-1,-1):
 	        if arr[j]>temp[j]:
 	            while l and l[-1]<=temp[j]:
@@ -31,10 +29,6 @@ class Solution:
 	                return True
 	            l.append(arr[j])
 	    return False
-
-#{ 
-#  Driver Code Starts
-#Initial Template for Python 3
 
 if __name__ == '__main__':
     tcs=int(input())
