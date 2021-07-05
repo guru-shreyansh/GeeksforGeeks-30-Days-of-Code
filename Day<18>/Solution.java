@@ -2,26 +2,27 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class GFG
+class GfG
 {
     public static void main (String[] args)
 	{
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while(t-->0)
+        while (t-->0)
         {
             int n = sc.nextInt();
             int arr[]= new int[n];
-            for(int i=0; i<n; i++)
+            for (int i=0; i<n; i++)
                 arr[i] = sc.nextInt();
             Solution ob = new Solution();
-            if(ob.recreationalSpot(arr,n))
+            if (ob.recreationalSpot(arr,n))
                 System.out.println("True");
             else
                 System.out.println("False");
         }
 	}
-}// } Driver Code Ends
+}
+
 class Solution
 {
     static boolean recreationalSpot(int[] arr , int n)
@@ -36,7 +37,7 @@ class Solution
         
         for (int j = n - 1; j >= 0; j--)
         {
-            if (arr[j] > temp[j]) 
+            if (arr[j] > temp[j])
             {
                 while (!stack.empty() && stack.peek() <= temp[j])
                     stack.pop();
