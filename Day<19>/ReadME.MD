@@ -14,16 +14,16 @@ ________________________________________________________________________________
 &emsp;&emsp;M = 2<br>
 &emsp;&emsp;N = 5<br>
 &emsp;&emsp;Output: 2<br>
-&emsp;&emsp;Explanation: From index 0, the indices that can be visited are
-0 + 2 = 2
-0 + 2 + 2 = 4
-0 + 5 = 5
-0 + 2 + 2 + 2 = 6
-0 + 2 + 5 = 7
-0 + 2 + 2 + 2 + 2 = 8
-0 + 2 + 2 + 5 = 9
-0 + 5 + 5 = 10 and so on.
-1 and 3 are the only indices that cannot be visited. Therefore the candies at these two positions will be left on the board.<br>
+&emsp;&emsp;Explanation: From index 0, the indices that can be visited are:<br>
+&emsp;&emsp;0 + 2 = 2<br>
+&emsp;&emsp;0 + 2 + 2 = 4<br>
+&emsp;&emsp;0 + 5 = 5<br>
+&emsp;&emsp;0 + 2 + 2 + 2 = 6<br>
+&emsp;&emsp;0 + 2 + 5 = 7<br>
+&emsp;&emsp;0 + 2 + 2 + 2 + 2 = 8<br>
+&emsp;&emsp;0 + 2 + 2 + 5 = 9<br>
+&emsp;&emsp;0 + 5 + 5 = 10 and so on.<br>
+&emsp;&emsp;1 and 3 are the only indices that cannot be visited. Therefore the candies at these two positions will be left on the board.<br>
 * **Example 2**:<br>
 &emsp;&emsp;M = 2<br>
 &emsp;&emsp;N = 7<br>
@@ -49,7 +49,7 @@ ________________________________________________________________________________
 - [x] _Find the largest index that can’t be obtained using any combination of M & N using Frobenius Number which defines X = (M * N) – M – N. Add X to a queue. X is the largest index than cannot be visited so every index greater than X need not be checked. Now add X-M and X-N to the queue and so on. _
 ```java
     static int candies(int m, int n)
-    {                               // Any number >= "LCM(m,n)-m-n" can be formed
+    {                               // Any number > "LCM(m,n)-m-n" can be formed
         return (m-1)*(n-1)/2;       // So we only need to check for numbers less
     }                               //      than or equal to (mn - m - n)
 @author : Shreyansh Kumar Singh
