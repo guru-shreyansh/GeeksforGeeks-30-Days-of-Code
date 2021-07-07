@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 class GURU
 {
-     public static void main(String args[]) throws IOException
+     public static void main(String args[])
      { 
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
