@@ -52,6 +52,7 @@ ________________________________________________________________________________
     {                               // Any number > "LCM(m,n)-m-n" can be formed
         return (m-1)*(n-1)/2;       // So we only need to check for numbers less
     }                               //      than or equal to (mn - m - n)
+    /** Chicken McNugget Problem / Two Stamp Problem / Frobenius Problem **/
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
