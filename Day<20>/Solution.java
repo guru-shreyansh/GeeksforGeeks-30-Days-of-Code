@@ -1,26 +1,25 @@
-import java.util.LinkedList; 
-import java.util.Queue; 
 import java.io.*;
 import java.util.*;
 
-class Node{
+class Node
+{
     int data;
     Node left;
     Node right;
-    Node(int data){
+    Node(int data)
+	{
         this.data = data;
         left=null;
         right=null;
     }
 }
 
-class GfG {
-    
-    static Node buildTree(String str){
-        
-        if(str.length()==0 || str.charAt(0)=='N'){
+class GfG
+{
+    static Node buildTree(String str)
+	{
+        if (str.length()==0 || str.charAt(0)=='N')
             return null;
-        }
         
         String ip[] = str.split(" ");
         // Create the root of the tree
@@ -33,8 +32,8 @@ class GfG {
         // Starting from the second element
         
         int i = 1;
-        while(queue.size()>0 && i < ip.length) {
-            
+        while (0 < queue.size() && i < ip.length)
+		{
             // Get and remove the front of the queue
             Node currNode = queue.peek();
             queue.remove();
@@ -43,42 +42,41 @@ class GfG {
             String currVal = ip[i];
                 
             // If the left child is not null
-            if(!currVal.equals("N")) {
-                    
+            if (!currVal.equals("N"))
+			{
                 // Create the left child for the current node
                 currNode.left = new Node(Integer.parseInt(currVal));
                 // Push it to the queue
                 queue.add(currNode.left);
             }
-                
             // For the right child
             i++;
-            if(i >= ip.length)
+            if (ip.length <= i)
                 break;
-                
+
             currVal = ip[i];
-                
+
             // If the right child is not null
-            if(!currVal.equals("N")) {
-                    
+            if (!currVal.equals("N"))
+			{
                 // Create the right child for the current node
                 currNode.right = new Node(Integer.parseInt(currVal));
-                    
+                
                 // Push it to the queue
                 queue.add(currNode.right);
             }
             i++;
         }
-        
         return root;
     }
     
-	public static void main (String[] args) throws IOException{
+	public static void main (String[] args) throws IOException
+	{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
         int t=Integer.parseInt(br.readLine());
-        
-        while(t > 0){
+        while (t > 0)
+		{
             String line = br.readLine().trim();
             Node root = buildTree(line);
             
@@ -94,32 +92,21 @@ class GfG {
     }
 }
 
-// } Driver Code Ends
-/*
-class Node{
-    int data;
-    Node left;
-    Node right;
-    Node(int data){
-        this.data = data;
-        left=null;
-        right=null;
-    }
-}
-*/
-class Solution{
+class Solution
+{
     static int sum;
-    
-    static void add_subtree(Node n, int dist){
-        if( (n==null) || (dist<0) ) return;
+    static void add_subtree(Node n, int dist)
+	{
+        if ( (n==null) || (dist<0) ) return;
         sum += n.data;
         add_subtree(n.left, dist-1);
         add_subtree(n.right, dist-1);
     }
     
-    static int traverse(Node n, int target, int k){
-        if(n==null) return -1;
-        if(n.data==target)
+    static int traverse(Node n, int target, int k)
+	{
+        if (n==null) return -1;
+        if (n.data==target)
         {
             add_subtree(n, k);
             // adding all nodes within range in the sub tree below
@@ -127,7 +114,7 @@ class Solution{
         }
         
         int dist = traverse(n.left, target, k);
-        if(dist>-1)
+        if (-1 < dist)
         // dist>-1 indicates target was found in left subtree
         {
             sum += n.data;
@@ -137,7 +124,7 @@ class Solution{
         }
         
         dist = traverse(n.right, target, k);
-        if(dist>-1)
+        if (-1 < dist)
         // dist>-1 indicates target was found in right subtree
         {
             sum += n.data;
@@ -145,11 +132,10 @@ class Solution{
             // adding values from left sub tree
             return dist-1;
         }
-        
         return -1;
-    }
-    
-    static int sum_at_distK(Node root, int target, int k){
+	}
+    static int sum_at_distK(Node root, int target, int k)
+	{
         sum = 0;
         traverse(root, target, k);
         return sum;
