@@ -14,97 +14,77 @@ Node* newNode(int val)
     temp->data = val;
     temp->left = NULL;
     temp->right = NULL;
-    
     return temp;
 }
 
 Node* buildTree(string str)
-{   
+{
     // Corner Case
-    if(str.length() == 0 || str[0] == 'N')
+    if (str.length() == 0 || str[0] == 'N')
             return NULL;
     
-    // Creating vector of strings from input 
+    // Creating vector of strings from input
     // string after spliting by space
     vector<string> ip;
     
     istringstream iss(str);
-    for(string str; iss >> str; )
+    for (string str; iss >> str;)
         ip.push_back(str);
-        
+    
     // Create the root of the tree
     Node* root = newNode(stoi(ip[0]));
-        
+    
     // Push the root to the queue
     queue<Node*> queue;
     queue.push(root);
-        
+    
     // Starting from the second element
     int i = 1;
-    while(!queue.empty() && i < ip.size()) {
-            
+    while (!queue.empty() && i < ip.size())
+	{
         // Get and remove the front of the queue
         Node* currNode = queue.front();
         queue.pop();
-            
+        
         // Get the current node's value from the string
         string currVal = ip[i];
-            
+        
         // If the left child is not null
-        if(currVal != "N") {
-                
+        if(currVal != "N")
+		{
             // Create the left child for the current node
             currNode->left = newNode(stoi(currVal));
-                
+            
             // Push it to the queue
             queue.push(currNode->left);
         }
-            
+        
         // For the right child
         i++;
-        if(i >= ip.size())
+        if (ip.size() <= i)
             break;
         currVal = ip[i];
-            
+        
         // If the right child is not null
-        if(currVal != "N") {
-                
+        if(currVal != "N")
+		{
             // Create the right child for the current node
             currNode->right = newNode(stoi(currVal));
-                
+            
             // Push it to the queue
             queue.push(currNode->right);
         }
         i++;
     }
-    
     return root;
 }
 
-
- // } Driver Code Ends
-
-
-/*
-// node structure:
-
-struct Node
+class Solution
 {
-    int data;
-    Node* left;
-    Node* right;
-};
-
-*/
-
-
-
-class Solution{
-    
     private:
     void add_subtree(Node* n, int dist, int* sum)
     {
-        if( !n || dist<0 ) return;
+        if ( !n || dist<0 ) return;
         *sum += n->data;
         add_subtree(n->left, dist-1, sum);
         add_subtree(n->right, dist-1, sum);
@@ -112,8 +92,8 @@ class Solution{
     
     int traverse(Node* n, int target, int k, int* sum)
     {
-        if(!n) return -1;
-        if(n->data==target)
+        if (!n) return -1;
+        if (n->data==target)
         {
             add_subtree(n, k, sum);
             // adding all nodes within range in the sub tree below
@@ -121,8 +101,8 @@ class Solution{
         }
         
         int dist = traverse(n->left, target, k, sum);
-        if(dist>-1)
-        // dist>-1 indicates target was found in left subtree
+        if (-1 < dist)
+        // -1 < dist indicates target was found in left subtree
         {
             *sum += n->data;
             add_subtree(n->right, dist-1, sum);
@@ -131,15 +111,14 @@ class Solution{
         }
         
         dist = traverse(n->right, target, k, sum);
-        if(dist>-1)
-        // dist>-1 indicates target was found in right subtree
+        if (-1 < dist)
+        // -1 < dist indicates target was found in right subtree
         {
             *sum += n->data;
             add_subtree(n->left, dist-1, sum);
             // adding values from left sub tree
             return dist-1;
         }
-        
         return -1;
     }
     
@@ -150,19 +129,15 @@ class Solution{
         traverse(root, target, k, &sum);
         return sum;
     }
-
-
 };
 
-
-// { Driver Code Starts.
 int main()
 {
     int t;
     cin>>t;
     getchar();
     
-    while(t--)
+    while (t--)
     {
         string s;
         getline(cin,s);
