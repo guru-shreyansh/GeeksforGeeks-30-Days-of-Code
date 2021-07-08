@@ -11,29 +11,13 @@ ________________________________________________________________________________
 * **Example 1**:<br>
 &emsp;&emsp;Target = 9<br>
 &emsp;&emsp;K = 1<br>
-                   1
-                 /    \
-                2      9
-               /      /  \
-              4      5     7
-            /   \         /  \
-           8     19     20    11
-          /     /  \
-         30   40   50
+<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C20%3E/D20.a.png" height="180" width="300"><br><br><br><br><br><br><br><br>
 &emsp;&emsp;Output: 22<br>
 &emsp;&emsp;Explanation: Nodes within distance 1 from 9 are 9, 5, 7, 1.<br>
 * **Example 2**:<br>
 &emsp;&emsp;Target = 40<br>
 &emsp;&emsp;K = 2<br>
-                   1
-                 /    \
-                2      9
-               /      /  \
-              4      5     7
-            /   \         /  \
-           8     19     20    11
-          /     /  \
-         30   40   50
+<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C20%3E/D20.a.png" height="180" width="300"><br><br><br><br><br><br><br><br>
 &emsp;&emsp;Output: 113<br>
 &emsp;&emsp;Explanation: Nodes within distance 2 from 40 are 40, 19, 50, 4.<br>
 
@@ -65,9 +49,9 @@ class Solution
     }
     static int find(Node root, int k)
     {
-        if(root == null)
+        if (root == null)
             return -1;
-        if(root.data == key)
+        if (root.data == key)
         {
             sum += root.data;
             k--;
@@ -75,7 +59,7 @@ class Solution
             find(root.right, k);
             return k--;
         }
-        else if(k != range && k >= 0)
+        else if (k != range && 0 <= k)
         {
             sum += root.data;
             k--;
@@ -83,18 +67,19 @@ class Solution
             find(root.right, k);
             return -1;
         }
-        else if(k < 0)
+        else if (k < 0)
             return -1;
-        else{
+        else
+        {
             int k1 = find(root.left, k);
             int k2 = find(root.right, k);
-            if(k1 != -1)
+            if (k1 != -1)
             {
                 sum += root.data;
                 find(root.right, k1-1);
                 return k1-1;
             }
-            if(k2 != -1)
+            if (k2 != -1)
             {
                 sum += root.data;
                 find(root.left, k2-1);
