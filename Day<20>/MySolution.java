@@ -29,14 +29,14 @@ class GURU
         queue.add(root);
         
         int i = 1;
-        while(queue.size()>0 && i < ip.length)
+        while (0 < queue.size() && i < ip.length)
 		{
             Node currNode = queue.peek();
             queue.remove();
             
             String currVal = ip[i];
             
-            if(!currVal.equals("N"))
+            if (!currVal.equals("N"))
 			{
                 currNode.left = new Node(Integer.parseInt(currVal));
                 queue.add(currNode.left);
