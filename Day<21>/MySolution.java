@@ -14,7 +14,7 @@ class Node
     }
 }
 
-class GFG
+class GURU
 {
     static Node buildTree(String str)
     {
@@ -28,7 +28,7 @@ class GFG
         queue.add(root);
         
         int i = 1;
-        while (queue.size()>0 && i < ip.length)
+        while (0 < queue.size() && i < ip.length)
         {
             Node currNode = queue.peek();
             queue.remove();
