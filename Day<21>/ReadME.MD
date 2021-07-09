@@ -8,23 +8,11 @@ ________________________________________________________________________________
 <blockquote>Geek has developed an effective vaccine for Corona virus and he wants each of the N houses in Geek Land to have access to it. Given a binary tree where each node represents a house in Geek Land, find the minimum number of houses that should be supplied with the vaccine kit if one vaccine kit is sufficient for that house, its parent house and it's immediate child nodes. </blockquote>
 
 * **Example 1**:<br>
-&emsp;&emsp;<br>
-    1
-   / \
-  2   3 
-        \
-         4
-          \
-           5
-            \
-             6
+<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C21%3E/D21.a.png" height="300" width="180"><br><br><br><br><br><br><br><br><br><br><br><br><br>
 &emsp;&emsp;Output: 2<br>
 &emsp;&emsp;Explanation: The vaccine kits should be supplied to house numbers 1 and 5.<br>
 * **Example 2**:<br>
-&emsp;&emsp;<br>
-    1
-   / \
-  2   3
+<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C21%3E/D21.b.png" height="150" width="200"><br><br><br><br><br><br><br>
 &emsp;&emsp;Output: 1<br>
 &emsp;&emsp;Explanation: The vaccine kits should be supplied to house number 1.<br>
 
@@ -62,28 +50,28 @@ ________________________________________________________________________________
         if (node.left != null)
         {
             n = traverse(node.left);
-            if( n==0 )
+            if ( n==0 )
                 zero = true;
-            if( n==2 )
+            if ( n==2 )
                 two = true;
         }
         
-        if(node.right != null)
+        if (node.right != null)
         {
             n = traverse(node.right);
-            if( n==0 )
+            if ( n==0 )
                 zero = true;
-            if( n==2 )
+            if ( n==2 )
                 two = true;
         }
         
-        if( zero )
+        if ( zero )
         {
             ++result;
             return 2;
         }
         
-        if( two )
+        if ( two )
             return 1;
         return 0; 
     }
