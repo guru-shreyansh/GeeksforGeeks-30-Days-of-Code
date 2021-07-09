@@ -14,7 +14,7 @@ class Node
     }
 }
 
-class GFG
+class GfG
 {
     static Node buildTree(String str)
     {
@@ -60,7 +60,6 @@ class GFG
             {
                 // Create the right child for the current node
                 currNode.right = new Node(Integer.parseInt(currVal));
-                
                 // Push it to the queue
                 queue.add(currNode.right);
             }
