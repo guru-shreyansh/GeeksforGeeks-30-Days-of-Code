@@ -11,29 +11,11 @@ ________________________________________________________________________________
 If there are multiple ranges with the same gap (i.e. (y-x)) return the range with the smallest x.</blockquote>
 
 * **Example 1**:<br>
-&emsp;&emsp;<br>
-              8
-          /   \
-         3     10
-       /  \      \
-      2    6      14
-          / \     /
-         4   7   12
-                /  \
-               11   13
+<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C21%3E/D22.a.png" height="300" width="250"><br><br><br><br><br><br><br><br><br><br><br><br>
 &emsp;&emsp;Output: 6 11<br>
 &emsp;&emsp;Explanation: Level order traversal of the tree is [8], [3, 10], [2, 6, 14], [4, 7, 12], [11, 13]. The shortest range which satisfies the above mentioned condition is [6, 11].<br>
 * **Example 2**:<br>
-&emsp;&emsp;<br>
-   12
-    \
-     13
-       \
-        14
-         \
-          15
-           \
-           16
+<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C21%3E/D22.a.png" height="300" width="250"><img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C21%3E/D22.b.png" height="300" width="180"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 &emsp;&emsp;Output: 12 16<br>
 &emsp;&emsp;Explanation: Each level contains one node, so the shortest range is [12, 16].<br>
 
