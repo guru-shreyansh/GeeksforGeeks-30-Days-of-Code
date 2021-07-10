@@ -11,11 +11,11 @@ ________________________________________________________________________________
 If there are multiple ranges with the same gap (i.e. (y-x)) return the range with the smallest x.</blockquote>
 
 * **Example 1**:<br>
-<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C21%3E/D22.a.png" height="300" width="250"><br><br><br><br><br><br><br><br><br><br><br><br>
+<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C22%3E/D22.a.png" height="250" width="300"><br><br><br><br><br><br><br><br><br><br><br>
 &emsp;&emsp;Output: 6 11<br>
 &emsp;&emsp;Explanation: Level order traversal of the tree is [8], [3, 10], [2, 6, 14], [4, 7, 12], [11, 13]. The shortest range which satisfies the above mentioned condition is [6, 11].<br>
 * **Example 2**:<br>
-<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C21%3E/D22.a.png" height="300" width="250"><img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C21%3E/D22.b.png" height="300" width="180"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img align='left' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C22%3E/D22.b.png" height="300" width="180"><br><br><br><br><br><br><br><br><br><br><br><br><br>
 &emsp;&emsp;Output: 12 16<br>
 &emsp;&emsp;Explanation: Each level contains one node, so the shortest range is [12, 16].<br>
 
@@ -67,12 +67,12 @@ class Solution
         int L = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
 	    int range = Integer.MAX_VALUE, R = Integer.MAX_VALUE;
 	    PriorityQueue<Triplet> pq = new PriorityQueue<Triplet>();
-	    for(int i=0; i<n; i++)
+	    for (int i=0; i<n; i++)
 	    {
 	        pq.add( new Triplet(result.get(i).get(0),i,0) );
 	        max = Math.max(max , result.get(i).get(0));
 	    }
-	    while( true )
+	    while ( true )
 	    {
 	        Triplet t = pq.poll();
 	        if ( (max-t.key+1)<range )
