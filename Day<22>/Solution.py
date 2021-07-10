@@ -35,7 +35,7 @@ class Solution:
         #  stores number of nodes at ith level
         depth=[0]*maxDepth
         # first count number of nodes at ith level till the root 
-        #  right pointer initially is at root's index in inorder traversal of bst
+        # right pointer initially is at root's index in inorder traversal of bst
         for k in range(len(level)):
             depth[level[k]]+=1
             if level[k]==0:
@@ -51,11 +51,11 @@ class Solution:
         # if currently picked range contains all levels change x and y accordingly
         if cntzero==0:
             x,y=inorder[i],inorder[j]
-    
+
         # left pointer can at most go upto root's index(i.e. k)
         # right pointer can go upto last index of inorder traversal of tree
         while i<=k and j<len(inorder):
-            #  while right pointer doesn't reach last index 
+            #  while right pointer doesn't reach last index
             #  and the current range doesn't contain all levels
             while j<len(inorder):
                 #  if cntZero is 0 then this range contains all levels
@@ -65,15 +65,14 @@ class Solution:
                         x,y=inorder[i],inorder[j]
                     break
                 j+=1
-    
-                if j>= len(inorder):
+
+                if len(inorder) <= j:
                     break
                 #  if new level is discovered by this range then cntZero is decreased by 1
                 if depth[level[j]]==0:
                     cntzero-=1
                 depth[level[j]]+=1
-            #  while current range contains all levels 
-            # we can shift the left pointer by +1
+            #  while current range contains all levels we can shift the left pointer by +1
             while not cntzero and i<=k:
                 if (y-x)>(inorder[j]-inorder[i]):
                     x,y=inorder[i],inorder[j]
@@ -84,11 +83,6 @@ class Solution:
                 i+=1
         return (x,y)
 
-#{ 
-#  Driver Code Starts
-#Initial Template for Python 3
-
-#contributed by RavinderSinghPB
 # Tree Node
 class Node:
     def __init__(self, val):
@@ -103,8 +97,7 @@ def buildTree(s):
     if (len(s) == 0 or s[0] == "N"):
         return None
 
-    # Creating list of strings from input
-    # string after spliting by space
+    # Creating list of strings from input string after spliting by space
     ip = list(map(str, s.split()))
 
     # Create the root of the tree
@@ -118,7 +111,7 @@ def buildTree(s):
 
     # Starting from the second element
     i = 1
-    while (size > 0 and i < len(ip)):
+    while (0 < size and i < len(ip)):
         # Get and remove the front of the queue
         currNode = q[0]
         q.popleft()
@@ -137,7 +130,7 @@ def buildTree(s):
             size = size + 1
         # For the right child
         i = i + 1
-        if (i >= len(ip)):
+        if (len(ip) <= i):
             break
         currVal = ip[i]
 
