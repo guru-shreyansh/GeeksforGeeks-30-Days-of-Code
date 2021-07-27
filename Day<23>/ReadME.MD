@@ -40,7 +40,7 @@ ________________________________________________________________________________
 - [ ] _…..c) Else insert the current element to the heap after removing the root._
 - [ ] _3) Finally the heap has k closest elements._
 ```java
-  public ArrayList<Integer> Kclosest(int arr[], int n, int x, int k) 
+    public ArrayList<Integer> Kclosest(int arr[], int n, int x, int k) 
 	{
 	    List<List<Integer>> list = new ArrayList<List<Integer>>();
 		for (int i=0; i<n; i++)
