@@ -1,11 +1,10 @@
 import java.io.*;
-import java.util.*; 
+import java.util.*;
 import java.lang.*;
 
- // } Driver Code Ends
-class Solution 
-{ 
-	public ArrayList<Integer> Kclosest(int arr[], int n, int x, int k) 
+class Solution
+{
+	public ArrayList<Integer> Kclosest(int arr[], int n, int x, int k)
 	{
 	    List<List<Integer>> list = new ArrayList<List<Integer>>();
 		for (int i=0; i<n; i++)
@@ -44,12 +43,14 @@ class Solution
 	}
 }
 
-// { Driver Code Starts.
-class GFG{
-    public static void main(String args[]) throws IOException { 
+class GURU
+{
+    public static void main(String args[]) throws IOException
+	{
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while(t > 0){
+        while (t > 0)
+		{
         	int n = sc.nextInt();
         	int x = sc.nextInt();
         	int k = sc.nextInt();
@@ -60,11 +61,10 @@ class GFG{
         	}
             Solution ob = new Solution();
             ArrayList<Integer> ans = ob.Kclosest(arr,n,x,k);
-
-            for (int i=0; i<ans.size(); i++) 
-        	    System.out.print(ans.get(i)+" "); 
+            for (int i=0; i<ans.size(); i++)
+        	    System.out.print(ans.get(i)+" ");
             System.out.println();
             t--;
         }
-    } 
+    }
 }
