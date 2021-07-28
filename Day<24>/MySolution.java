@@ -1,36 +1,35 @@
 import java.io.*;
 import java.util.*;
-class GfG
+
+class GURU
 {
     public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-->0)
         {
-            Scanner sc = new Scanner(System.in);
-            int t = sc.nextInt();
-            while(t-->0)
-                {
-                    int n = sc.nextInt();
-                    ArrayList<Integer> arr = new ArrayList<Integer>();
-                    ArrayList<Integer> res = new ArrayList<Integer>();
-                    for(int i=0; i<n; i++)
-                        {
-                            int x = sc.nextInt();
-                            arr.add(x);
-                        }
-                    int k = sc.nextInt();
-                    
-                    Solution obj = new Solution();
-                    res = obj.TopK(arr,k);
-                    
-                    for(int i=0; i<res.size();i++)
-                        {
-                            System.out.print(res.get(i) + " ");
-                        }
-                    System.out.println();    
-                    
-                        
-                }
+            int n = sc.nextInt();
+            ArrayList<Integer> arr = new ArrayList<Integer>();
+            ArrayList<Integer> res = new ArrayList<Integer>();
+            for (int i=0; i<n; i++)
+            {
+                int x = sc.nextInt();
+                arr.add(x);
+            }
+            int k = sc.nextInt();
+            
+            Solution obj = new Solution();
+            res = obj.TopK(arr,k);
+            
+            for (int i=0; i<res.size(); i++)
+            {
+                System.out.print(res.get(i) + " ");
+            }
+            System.out.println();
         }
-}// } Driver Code Ends
+    }
+}
 
 class Solution
 {
@@ -55,7 +54,6 @@ class Solution
         {
             ans.add( heap.poll().getKey() );
         }
-        
         return ans;
     }
 }
