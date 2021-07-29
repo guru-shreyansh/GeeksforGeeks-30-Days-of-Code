@@ -1,41 +1,40 @@
 import java.util.*;
 import java.math.*;
-
-class Pair{
-    
+class Pair
+{
     int x,y;
-    Pair(int x,int y)
+    Pair(int x, int y)
     {
         this.x = x;
         this.y = y;
     }
 }
 
-class Gfg
+class GURU
 {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
         int t = Integer.parseInt(sc.next());
-        while(t-- > 0)
+        while (t-- > 0)
         {
             int m = Integer.parseInt(sc.next());
             int n = Integer.parseInt(sc.next());
             char mat[][] = new char[m][n];
-            for(int i=0;i<m;i++)
+            for (int i=0; i<m; i++)
             {
-                for(int j=0;j<n;j++)
+                for (int j=0; j<n; j++)
                 {
                     mat[i][j] = sc.next().charAt(0);
                 }
             }
-           
+            
             Solution T = new Solution();
             int ans[][] = T.findDistance(mat, m, n);
             
-            for(int i=0;i<m;i++)
+            for(int i=0; i<m; i++)
             {
-                for(int j=0;j<n;j++)
+                for (int j=0; j<n; j++)
                 {
                     System.out.print(ans[i][j] + " ");
                 }
@@ -44,7 +43,6 @@ class Gfg
         }
     }
 }
-// } Driver Code Ends
 
 class Solution
 {
