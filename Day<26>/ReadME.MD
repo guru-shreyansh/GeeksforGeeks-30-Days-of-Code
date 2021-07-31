@@ -23,8 +23,8 @@ As the project manager, compute the minimum time required to complete the projec
 2 3
 3 1<br>
 &emsp;&emsp;Output: 8<br>
-<br>
-&emsp;&emsp;Explanation: <img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C26%3E/D26_Exp.png" height="300" width="500">The Graph of dependency forms this and the project will be completed when Module 1 is completed which takes 8 months.<br>
+
+&emsp;&emsp;Explanation: <img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C26%3E/D26_Exp.png" height="300" width="500"><br>&emsp;&emsp;The Graph of dependency forms this and the project will be completed when Module 1 is completed which takes 8 months.
 
 * **Example 2**:<br>
 &emsp;&emsp;N = 3, M = 3<br>
