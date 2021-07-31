@@ -1,45 +1,50 @@
 import java.io.*;
 import java.util.*;
 
-class pair {
+class pair
+{
     int x, y;
-    pair() {
+    pair()
+    {
         this.x = 0;
         this.y = 0;
     }
-    pair(int x, int y) {
+    pair(int x, int y)
+    {
         this.x = x;
         this.y = y;
     }
 }
 
-class GFG {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br =
-            new BufferedReader(new InputStreamReader(System.in));
+class GURU
+{
+    public static void main(String[] args) throws IOException
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int t = Integer.parseInt(br.readLine());
-        while (t-- > 0) {
+        while (t-- > 0)
+        {
             String[] nm = br.readLine().trim().split(" ");
             int n = Integer.parseInt(nm[0]);
             int m = Integer.parseInt(nm[1]);
             String[] dr = br.readLine().trim().split(" ");
             int[] duration = new int[dr.length];
-            for (int i = 0; i < dr.length; i++) {
+            for (int i = 0; i < dr.length; i++)
+            {
                 duration[i] = Integer.parseInt(dr[i]);
             }
             ArrayList<pair> dependency = new ArrayList<>();
-            for (int i = 0; i < m; i++) {
+            for (int i = 0; i < m; i++)
+            {
                 String[] xy = br.readLine().trim().split(" ");
-                dependency.add(
-                    new pair(Integer.parseInt(xy[0]), Integer.parseInt(xy[1])));
+                dependency.add(new pair(Integer.parseInt(xy[0]), Integer.parseInt(xy[1])));
             }
             Solution sln = new Solution();
             System.out.println(sln.minTime(dependency, duration, n, m));
         }
     }
-}// } Driver Code Ends
-
+}
 
 class Solution
 {
