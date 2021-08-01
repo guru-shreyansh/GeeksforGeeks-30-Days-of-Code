@@ -1,11 +1,9 @@
 import java.io.*;
-import java.util.*; 
+import java.util.*;
 
-
- // } Driver Code Ends
-class Solution 
-{ 
-    static int catchThieves(char arr[], int n, int k) 
+class Solution
+{
+    static int catchThieves(char arr[], int n, int k)
 	{
 	    int max = 0;
 	    boolean[] police = new boolean[n];  // Storing indices of Police
@@ -36,18 +34,19 @@ class Solution
 	}
 }
 
-// { Driver Code Starts.
-class GFG{
-    public static void main(String args[]) throws IOException {
+class GURU
+{
+    public static void main(String args[]) throws IOException
+	{
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 
-        while(t > 0)
+        while (0 < t)
         {
             int n = sc.nextInt();
             int k = sc.nextInt();
 			char arr[] = new char[n];
-			for(int i=0; i<n; i++)
+			for (int i=0; i<n; i++)
          		arr[i] = sc.next().charAt(0);
 
 			Solution ob = new Solution();
