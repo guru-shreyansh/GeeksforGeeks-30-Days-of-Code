@@ -36,7 +36,7 @@ ________________________________________________________________________________
 ###      ∑ HINTS ▸
 - [x] _Use Greedy approach._
 ```java
-  static int catchThieves(char arr[], int n, int k) 
+    static int catchThieves(char arr[], int n, int k) 
 	{
 	    int max = 0;
 	    boolean[] police = new boolean[n];  // Storing indices of Police
