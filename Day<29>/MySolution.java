@@ -1,20 +1,21 @@
 import java.io.*;
 import java.util.*;
-class GfG
+
+class GURU
 {
     public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-->0)
         {
-            Scanner sc = new Scanner(System.in);
-            int t = sc.nextInt();
-            while(t-->0)
-                {
-                    String str = sc.next();
+            String str = sc.next();
                  
-                    Sol obj = new Sol();
-                    System.out.println(obj.maxFrequency(str));
-                }
+            Sol obj = new Sol();
+            System.out.println(obj.maxFrequency(str));
         }
-}// } Driver Code Ends
+    }
+}
 
 class Sol
 {
