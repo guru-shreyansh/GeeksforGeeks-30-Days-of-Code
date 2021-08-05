@@ -1,12 +1,13 @@
 import java.io.*;
 import java.util.*;
-class GfG
+
+class GURU
 {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while(t-->0)
+        while (t-->0)
         {
             String str1 = sc.next();
             String str2 = sc.next();
@@ -14,8 +15,7 @@ class GfG
             System.out.println(obj.build_bridges(str1,str2));
         }
     }
-}// } Driver Code Ends
-
+}
 
 class Sol
 {
@@ -32,7 +32,7 @@ class Sol
         for (int i=0; i<C1.length; i++)
             for (int j=0; j<C2.length; j++)
                 _Dp[i+1][j+1] = C1[i] == C2[j]? _Dp[i][j]+1 : Math.max(_Dp[i][j+1], _Dp[i+1][j]);
-                
+        
         return _Dp[C1.length][C2.length];
     }
 }
