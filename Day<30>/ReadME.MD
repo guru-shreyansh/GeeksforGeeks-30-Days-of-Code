@@ -16,9 +16,9 @@ Note: Each tree in the forest belongs to one of the 3 categories represented by 
 &emsp;&emsp;str2 = "\*#"<br>
 &emsp;&emsp;Output: 2<br>
 &emsp;&emsp;Explanation: str1 = "\*@#\*" and str2 = "\*#". Two bridges can be built between the banks of the river in the following manner. 
-* @ # *
-|   |
-*   #<br>
+&emsp;&emsp;**\*** @ # **\***<br>
+&emsp;&emsp;|&emsp;&emsp;|<br>
+&emsp;&emsp;**\***&emsp; **#**<br>
 * **Example 2**:<br>
 &emsp;&emsp;str1 = "\*\*\*"<br>
 &emsp;&emsp;str2 = "##"<br>
