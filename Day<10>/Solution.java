@@ -25,7 +25,7 @@ class Solution
 		int M = str2.length();
 		int N = rep1.length();
 
-		for (int i = 0; i <= N - M; i++)
+		for (int i = 0; i <= N-M; i++)
 		{
 	    	int j;
 	    	for (j = 0; j < M; j++)
