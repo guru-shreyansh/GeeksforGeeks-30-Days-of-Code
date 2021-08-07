@@ -1,28 +1,28 @@
 import java.io.*;
 import java.util.*;
 
-class GFG
+class GfG
 {
     public static void main (String[] args)
     {
-	Scanner sc = new Scanner(System.in);
-	int t = Integer.parseInt(sc.next());
-	while (t-- > 0)
-	{
-	    int n = Integer.parseInt(sc.next());
-	    int a[][] = new int[n][n];
-		    
-	    for (int i=0; i<n; i++)
-	    {
-		for (int j=0; j<n; j++)
+		Scanner sc = new Scanner(System.in);
+		int t = Integer.parseInt(sc.next());
+		while (t-- > 0)
 		{
-		    a[i][j] = Integer.parseInt(sc.next());
+	    	int n = Integer.parseInt(sc.next());
+	    	int a[][] = new int[n][n];
+		    
+	    	for (int i=0; i<n; i++)
+	    	{
+				for (int j=0; j<n; j++)
+				{
+		    		a[i][j] = Integer.parseInt(sc.next());
+				}
+	    	}
+	    	int k = Integer.parseInt(sc.next());
+	    	Solution T = new Solution();
+	    	System.out.println(T.Maximum_Sum(a,n,k));
 		}
-	    }
-	    int k = Integer.parseInt(sc.next());
-	    Solution T = new Solution();
-	    System.out.println(T.Maximum_Sum(a,n,k));
-	}
     }
 }
 
@@ -51,13 +51,13 @@ class Solution
             for (int j = 0; j<K; j++)
                 sum += stripSum[i][j];
 
-            if (sum > max_sum)
+            if (max_sum < sum)
                 max_sum = sum;
 
             for (int j=1; j<N-K+1; j++)
             {
                 sum += (stripSum[i][j+K-1] - stripSum[i][j-1]);
-                if (sum > max_sum)
+                if (max_sum < sum)
                     max_sum = sum;
             }
         }
