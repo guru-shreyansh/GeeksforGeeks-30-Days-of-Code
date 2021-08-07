@@ -3,7 +3,7 @@ using namespace std;
 
 class Solution
 {
-  public:
+    public:
     int findK(vector<vector<int>> &a, int n, int m, int k)
     {
         int top = 0;
@@ -53,7 +53,7 @@ class Solution
                 for (int i=bottom; i>=top; i--)
                 {
                     k--;
-                    if(!k)
+                    if (!k)
                         return (a[i][left]);
                 }
                 left++;
@@ -84,4 +84,4 @@ int main()
         Solution obj;
         cout << obj.findK(a, n, m, k) << "\n";
     }
-} 
+}
