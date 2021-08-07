@@ -8,7 +8,7 @@ class GURU
         Scanner sc = new Scanner(System.in);
         int t = Integer.parseInt(sc.nextLine());
         while (t > 0)
-	{
+		{
             String A = sc.nextLine();
             String B = sc.nextLine();
             Solution ob = new Solution();
@@ -40,5 +40,5 @@ class Solution
         if ( aaa.indexOf(B) == -1 )
             return -1;
         return repeated;
-    } 
+    }
 }
