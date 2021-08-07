@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+
 public class GURU
 {
     public static void main(String[] args) throws IOException
