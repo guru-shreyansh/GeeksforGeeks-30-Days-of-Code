@@ -1,6 +1,6 @@
 import java.util.*;
 
-class GFG
+class GfG
 {
     public static void main(String args[])
     {
@@ -8,21 +8,21 @@ class GFG
         int t = sc.nextInt();
         while (t > 0)
         {
-	    int n = sc.nextInt();
-	    int m = sc.nextInt();
-	    int k = sc.nextInt();
-	    int arr[][] = new int[n][m];
-	    for (int i=0; i<n; i++)
-	    {
-		for (int j=0; j<m; j++)
-		{
-		    arr[i][j] = sc.nextInt();
+	    	int n = sc.nextInt();
+	    	int m = sc.nextInt();
+	    	int k = sc.nextInt();
+	    	int arr[][] = new int[n][m];
+	    	for (int i=0; i<n; i++)
+	    	{
+				for (int j=0; j<m; j++)
+				{
+		    		arr[i][j] = sc.nextInt();
+				}
+	    	}
+	    	Solution obj = new Solution();
+	    	System.out.println(obj.findK(arr, n, m, k));
+	    	--t;
 		}
-	    }
-	    Solution obj = new Solution();
-	    System.out.println(obj.findK(arr, n, m, k));
-	    --t;
-	}
     }
 }
 
@@ -52,7 +52,7 @@ class Solution
             }
             if (dir==1)
             {
-                for(int i=top; i<=bottom; i++)
+                for (int i=top; i<=bottom; i++)
                 {
                     k--;
                     if (k == 0)
@@ -63,7 +63,7 @@ class Solution
             }
             if (dir==2)
             {
-                for (int i=right;i>=left;i--)
+                for (int i=right; left<=i; i--)
                 {
                     k--;
                     if (k == 0)
@@ -74,10 +74,10 @@ class Solution
             }
             if (dir==3)
             {
-                for (int i=bottom;i>=top;i--)
+                for (int i=bottom; top<=i; i--)
                 {
                     k--;
-                    if(k == 0)
+                    if (k == 0)
                     return (a[i][left]);
                 }
                 left++;
