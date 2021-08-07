@@ -6,10 +6,10 @@ class GURU
 {
     public static void main(String args[])
     {
-	Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t > 0)
-	{
+		{
             int n = sc.nextInt();
             int[] preorder = new int[n];
             int[] inorder = new int[n];
@@ -22,9 +22,9 @@ class GURU
                 postorder[i] = sc.nextInt();
             Solution ob = new Solution();
             if (ob.checktree(preorder, inorder, postorder, n))
-		System.out.println("Yes");
-	    else
-		System.out.println("No");
+				System.out.println("Yes");
+	    	else
+				System.out.println("No");
             t--;
         }
     }
@@ -56,7 +56,7 @@ class Solution
         for (int i=0; i<len; i++)
             if (myPost[i] != postorder[i])
                 return false;
-         
+        
         return true;
     }
     static void postOrder(TreeNode root, List<Integer> list)
