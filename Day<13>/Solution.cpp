@@ -17,9 +17,9 @@ class Solution
     	int idx = -1;
     	for (int i = 0; i < N; ++i)
     	    if (inorder[i] == preorder[0])
-	    {
-    		idx = i;
-    		break;
+	    	{
+    			idx = i;
+    			break;
     	    }
 
     	if (idx == -1) return 0;
@@ -44,26 +44,26 @@ int main()
     cin>>t;
     while(t--)
     {
-	int n;
-	cin>>n;
-	int preorder[n];
-	int inorder[n];
-	int postorder[n];
+		int n;
+		cin>>n;
+		int preorder[n];
+		int inorder[n];
+		int postorder[n];
 
-	for (int i = 0; i < n; ++i)
-	    cin>>preorder[i];
+		for (int i = 0; i < n; ++i)
+	    	cin>>preorder[i];
 
-	for (int i = 0; i < n; ++i)
-	    cin>>inorder[i];
+		for (int i = 0; i < n; ++i)
+	    	cin>>inorder[i];
 
-	for (int i = 0; i < n; ++i)
-	    cin>>postorder[i];
+		for (int i = 0; i < n; ++i)
+	    	cin>>postorder[i];
         
         Solution obj;
-	if (obj.checktree(preorder, inorder, postorder, n))
-	    cout << "Yes\n";
-	else
-	    cout<<"No\n";
+		if (obj.checktree(preorder, inorder, postorder, n))
+	    	cout << "Yes\n";
+		else
+	    	cout<<"No\n";
     } 
     return 0; 
 }
