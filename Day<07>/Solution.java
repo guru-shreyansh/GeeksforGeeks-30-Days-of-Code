@@ -1,20 +1,20 @@
 import java.io.*;
 import java.util.*; 
 
-class GFG
+class GfG
 {
     public static void main(String args[]) throws IOException
     { 
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t > 0)
-	{
+		{
             int n = sc.nextInt();
             int array[] = new int[n];
             for (int i=0; i<n; i++)
-	    {
-		array[i] = sc.nextInt();
-	    }
+	    	{
+				array[i] = sc.nextInt();
+	    	}
             Solution ob = new Solution();
             System.out.println(ob.ValidPair(array,n));
             t--;
@@ -31,7 +31,7 @@ class Solution
         {
             int m = (l+r)>>>1;
             
-            if (a[m] >= x)
+            if (x <= a[m])
                 r = m;
             else 
                 l = m;
@@ -41,10 +41,10 @@ class Solution
 
     static long ValidPair(int a[], int n) 
     {
-	Arrays.sort(a);
+		Arrays.sort(a);
     	long ans = 0;
     	for (int i = 0; i < n; ++i)
-	{
+		{
     	    if (a[i] <= 0)
     		continue;
     	    // search for first element >= (-a[i] + 1)
