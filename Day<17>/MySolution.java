@@ -1,5 +1,6 @@
 import java.util.*;
 import java.io.*;
+
 class GURU
 {
 	public static void main (String[] args)
