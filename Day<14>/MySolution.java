@@ -1,9 +1,10 @@
 import java.io.*;
-import java.util.*; 
+import java.util.*;
+
 class GURU
 {
     public static void main(String args[]) throws IOException
-    { 
+    {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 
@@ -17,8 +18,8 @@ class GURU
             System.out.println(ob.RulingPair(array,n));
             t--;
         }
-    } 
-} 
+    }
+}
 
 class Solution
 {
@@ -31,7 +32,7 @@ class Solution
 	    {
 	        int sumOfDigits = digitSum(temp);   // Calculating sum of digits
 	        if (0 < map[sumOfDigits])             // If a value with same digit sum
-	        {                                       // is already present 
+	        {                                       // is already present
 	            value = map[sumOfDigits];
 	            maxPair = Math.max(maxPair, value+temp);
 	            if (value < temp)                       // Replacing the element if current value
