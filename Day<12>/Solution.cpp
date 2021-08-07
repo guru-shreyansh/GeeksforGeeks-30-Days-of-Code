@@ -35,7 +35,7 @@ int main()
     	for (int i = 0; i < n; i++)
     	    cin >> arr[i];
     	Solution obj;
-	cout << obj.sumBitDiff(arr, n) << "\n";
+		cout << obj.sumBitDiff(arr, n) << "\n";
     }
     return 0;
 }
