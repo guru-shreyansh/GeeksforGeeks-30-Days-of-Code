@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class GFG
+class GfG
 {
     public static void main(String args[]) throws IOException
     {
