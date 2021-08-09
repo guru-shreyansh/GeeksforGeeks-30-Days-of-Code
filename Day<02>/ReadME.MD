@@ -1,7 +1,7 @@
 <img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Hard%231.png" width="100">
 <h1>:people_holding_hands: Nth Natural Number</h1>
 
-`Mathematical`
+`Mathematics`
 `Number System`
 <img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C02%3E/D02.png">
 ________________________________________________________________________________________________________________________________________________________
@@ -45,7 +45,7 @@ long findNth(long N)
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
-      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Shinchan-vIxKKPtpfnL1K.gif" width="75"> </p>
+      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Shinchan-vIxKKPtpfnL1K.gif" width="75"><b>Problem ID: </b><a href="https://practice.geeksforgeeks.org/problems/nth-natural-number/1/?track=30-DOC-day-2&batchId=320" align="left">705801</a>🖱</p>
 <!--
 #GURU ツ
 -->
