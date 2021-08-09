@@ -71,7 +71,7 @@ public String compress(String s)
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
-      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Happy-Powerpuff-Girls-Qakyyrk1IKwuK8YtQ6.gif" width="75"><b>Problem Id: </b><a href="https://practice.geeksforgeeks.org/problems/47e5aa3f32aee9e0405f04960f37c8a562d96a2f/1/?track=30-DOC-day-1&batchId=320" align="left">705801🖱</a></p>
+      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Happy-Powerpuff-Girls-Qakyyrk1IKwuK8YtQ6.gif" width="75"><b>Problem Id: </b><a href="https://practice.geeksforgeeks.org/problems/7a28dab3cd1a41839ca28cc33f05963c2654e9ff/1/?track=30-DOC-day-11&batchId=320" align="left">706068🖱</a></p>
 <!--
 #GURU ツ
 -->
