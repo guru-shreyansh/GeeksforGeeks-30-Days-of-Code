@@ -53,9 +53,8 @@ static int maxCandy(int height[], int n)
 	    	++start;
 		else 
 	    	--end;
-		}
-		return maxFound;
-    }
+	}
+	return maxFound;
 }
 @author : Shreyansh Kumar Singh
 ```
