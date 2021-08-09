@@ -61,7 +61,7 @@ ________________________________________________________________________________
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
-      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Pika-Wiggles-aoydQ5HRJUAbm.gif" width="135"> </p>
+      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Pika-Wiggles-aoydQ5HRJUAbm.gif" width="135"><b>Problem ID: </b><a href="https://practice.geeksforgeeks.org/problems/bbd15e2da95880979ce65acc7360e2c5681664e65520/1/?track=30-DOC-day-24&batchId=320" align="left">706080</a>🖱</p>
 <!--
 #GURU ツ
 -->
