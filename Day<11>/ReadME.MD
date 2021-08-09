@@ -44,34 +44,34 @@ public String compress(String s)
     for (i=1; i<n; i++)
     {
         int j = sub.get(i-1);
-	while (0 < j && s.charAt(i) != s.charAt(j))
-	    j = sub.get(j-1);
-	if (s.charAt(i) == s.charAt(j))
-	    j++;
-	sub.set(i,j);
+		while (0 < j && s.charAt(i) != s.charAt(j))
+	    	j = sub.get(j-1);
+		if (s.charAt(i) == s.charAt(j))
+	    	j++;
+		sub.set(i,j);
     }
     for (i=n-1; 0<=i; i--)
     {
-	if (i%2 == 1)
-	{
-	    if ( (i+1)/2<=sub.get(i) && (i+1)%(2*(i+1-sub.get(i)))==0 )
-	    {
-	        secC.append( "*" );
-	        i /= 2;
-	        ++i;
-	    }
-	    else 
-	        secC.append(s.charAt(i));
-	}
-	else 
-	    secC.append(s.charAt(i));
+		if (i%2 == 1)
+		{
+	    	if ( (i+1)/2<=sub.get(i) && (i+1)%(2*(i+1-sub.get(i)))==0 )
+	    	{
+	        	secC.append( "*" );
+	        	i /= 2;
+	        	++i;
+	    	}
+	    	else 
+	        	secC.append(s.charAt(i));
+		}
+		else 
+	    	secC.append(s.charAt(i));
     }
     return secC.reverse().toString();
 }
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
-      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Happy-Powerpuff-Girls-Qakyyrk1IKwuK8YtQ6.gif" width="75"> </p>
+      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Happy-Powerpuff-Girls-Qakyyrk1IKwuK8YtQ6.gif" width="75"><b>Problem Id: </b><a href="https://practice.geeksforgeeks.org/problems/47e5aa3f32aee9e0405f04960f37c8a562d96a2f/1/?track=30-DOC-day-1&batchId=320" align="left">705801🖱</a></p>
 <!--
 #GURU ツ
 -->
