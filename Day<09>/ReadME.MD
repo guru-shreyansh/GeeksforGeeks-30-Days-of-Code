@@ -57,7 +57,7 @@ int transfigure(String A, String B)
     	  if ( freq[i] != 0 )
     	      return -1;
     	
-    int matched = 0; i=j=0;
+    int matched = 0; i = j = 0;
     while ( j<len )
     {
     	  while ( j<len && bbb[i]!=aaa[j] )
