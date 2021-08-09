@@ -47,20 +47,20 @@ static int maxCandy(int height[], int n)
     while ( start < end )
     {
     	currArea = Math.min(height[start] , height[end]) * (end-start-1);
-	maxFound = Math.max(currArea , maxFound);
+		maxFound = Math.max(currArea , maxFound);
 	        
-	if ( height[start] < height[end] )
-	    ++start;
-	else 
-	    --end;
-	}
-	return maxFound;
+		if ( height[start] < height[end] )
+	    	++start;
+		else 
+	    	--end;
+		}
+		return maxFound;
     }
 }
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
-      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Shinchan-vIxKKPtpfnL1K.gif" width="75"> </p>
+      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Shinchan-vIxKKPtpfnL1K.gif" width="75"><b>Problem ID: </b><a href="https://practice.geeksforgeeks.org/problems/10471201e923a0b88a0c1482e6c7e8cc6fdfe93a/1/?track=30-DOC-day-8&batchId=320" align="left">706064</a>🖱</p>
 <!--
 #GURU ツ
 -->
