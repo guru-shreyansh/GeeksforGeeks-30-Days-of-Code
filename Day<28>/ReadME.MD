@@ -81,7 +81,7 @@ _Now, the target point moves one unit ahead of the end of span of the previously
 @author : Shreyansh Kumar Singh
 ```
 <p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
-      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Happy-Powerpuff-Girls-Qakyyrk1IKwuK8YtQ6.gif" width="75"><b>Problem ID: </b><a href="https://practice.geeksforgeeks.org/problems/410d51d667ab93f2219b15126f001f32e8bb029e/1/?track=30-DOC-day-28&batchId=320" align="left">706083</a>🖱</p>
+      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Pika-Wiggles-aoydQ5HRJUAbm.gif" width="135"><b>Problem ID: </b><a href="https://practice.geeksforgeeks.org/problems/410d51d667ab93f2219b15126f001f32e8bb029e/1/?track=30-DOC-day-28&batchId=320" align="left">706083</a>🖱</p>
 <!--
 #GURU ツ
 -->
