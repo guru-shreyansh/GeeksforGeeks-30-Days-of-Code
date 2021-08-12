@@ -36,19 +36,19 @@ Can geek build the three-building recreational zone?</blockquote>
 ###      ∑ HINTS ▸
 - [x] _Use a stack._
 ```java
-    static boolean recreationalSpot(int[] arr , int n)
+    static boolean recreationalSpot(int[] array, int N)
     {
-        int currMin = arr[0], currMax = arr[0];
-        
-        for (int i=1; i<n; i++)
+        int M = Integer.MIN_VALUE;
+        Stack<Integer> stack = new Stack<>();
+        for (int i = N-1; 0 <= i; i--)
         {
-            currMin = Math.min(arr[i] , currMin);
-            currMax = Math.max(arr[i] , currMax);
-            
-            if ( arr[i] < currMax && currMin < arr[i] )
+            if (array[i] < M)
                 return true;
+            while (!stack.isEmpty() && stack.peek() < array[i])
+                M = stack.pop();
+            stack.push(array[i]);
         }
-        return false; 
+        return false;
     }
 @author : Shreyansh Kumar Singh
 ```
