@@ -1,14 +1,18 @@
 # GeeksforGeeks-30-Days-of-Code
-30 Days to Form a New Habit of Coding and I'm In! Batch [1] 26 January ’21 to 27 February ’21
+> 30 Days to Form a New Habit of Coding and I'm In! Batch [1] 26 January ’21 to 27 February ’21
 
-<img align="right" src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/30-Days-of-Code-By-GeeksforGeeks.png" alt="30DaysOfCodeWithGFG" height="180" width="270">
+<img align="right" src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/30-Days-of-Code-By-GeeksforGeeks.png" alt="30DaysOfCodeWithGFG" height="225" width="350">
 
-[GeeksforGeeks : 30 Days of Code](https://practice.geeksforgeeks.org/batch/30-days-of-code-1)
+***This "_[30 Days of Code](https://practice.geeksforgeeks.org/batch/30-days-of-code-1)_" track by GFG was an overwhelmingly wonderful experience for me. When I initially decided to opt for this challenge, the only benefit I saw was building a coding habit & maintaining consistency. But at the end when I've successfully conquered the 30 days challenge, now I understand it was worth more than that.<br><br>
+It was a complete package for beginner to intermediate level programmers. Some of the features worth mentioning were:***<br>
+- [x] _A wide range of topics of DSA were covered over the 30 days._
+- [x] _Good level of questions of varying difficulty._
+- [x] _Engaging editorials._<br>
+
+***In short, this track was wonderfully designed. There were few days where I kept scratching my head for hours finding a way to solve/optimize the harder problems (thinking about giving up), but after completing this track I thank myself for not giving up. And not only that, now I'm again eagerly waiting for the next batch of "[GeeksforGeeks : 30 Days of Code](https://practice.geeksforgeeks.org/batch/30-days-of-code-1)" to learn & compete again.<br>
+Thanks!***<br>
+**< /Shreyansh >**
 <br>
-<!--
-Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C01%3E" target="_blank"><b>Rearrange Geek and his Classmates</b></a><img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/1.png" alt="Day [1]" height="45" width="90">
-* **Day [1]** : [**Rearrange Geek and his Classmates**](https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/tree/main/Day%3C01%3E) <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isEasy.png" alt="Day [1]" height="25" width="75">
--->
 
 <table align="center">
 
@@ -103,3 +107,55 @@ Day1:  <a href="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [30]" height="30" width="90" align="center"></td></tr>
     
 </table>
+
+<!-- ## Template for Each&Every Day $$
+<img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Easy%233.png" width="100">
+<h1>:people_holding_hands: NAME</h1>
+
+`List`
+`Array`
+`Vector`
+<img align='centre' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/Day%3C20%3E/D20.png">
+________________________________________________________________________________________________________________________________________________________
+<h3>:heavy_check_mark: Day 20</h3>
+<blockquote></blockquote>
+
+* **Example 1**:<br>
+&emsp;&emsp;<br>
+&emsp;&emsp;<br>
+&emsp;&emsp;Output: <br>
+&emsp;&emsp;Explanation: <br>
+* **Example 2**:<br>
+&emsp;&emsp;<br>
+&emsp;&emsp;<br>
+&emsp;&emsp;Output: <br>
+&emsp;&emsp;Explanation: <br>
+
+**➔ Your Task**:
+<mark></mark>
+
+<table align="center">
+      <tr><td><em><b>Expected Time Complexity</td> <td><em><b>Expected Auxiliary Space</td></tr>
+      <tr><td align="center">O(N)</td> <td align="center">O(1)</td></tr>
+</table>
+
+#### < Constraints >
+1  ≤ ` N ` ≤  10⁵<br>
+0  ≤ ` a[i] ` ≤  N-1
+
+###      ∑ HINTS ▸
+- [x] _ _
+```java
+void prank(long[] arr, int n)
+{
+      long temp = 0;
+}
+@author : Shreyansh Kumar Singh
+```
+<p align="right"> ⭐️ <a href="https://github.com/GURU-Shreyansh" target="_blank"> <b>GURU-Shreyansh</b></a>
+      <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GIF--Pika-Wiggles-aoydQ5HRJUAbm.gif" width="135"> </p>
+-->
+<!--
+#GURU ツ
+¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ¹⁰ ¹¹ ¹² ¹³ ¹⁴ ¹⁵ ¹⁶ ¹⁷ ¹⁸ ¹⁹ ²⁰ 
+-->
