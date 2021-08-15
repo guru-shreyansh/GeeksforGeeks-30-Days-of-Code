@@ -107,7 +107,10 @@ Thanks!***<br>
        <img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/isMedium.png" alt="Day [30]" height="30" width="90" align="center"></td></tr>
     
 </table>
-
+<br>
+   <p align="center">
+<img src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/GFG.Appreciation.Letter.jpg" alt="30DaysOfCodeWithGFG" align="center" height="50%" width="75%">
+   </p>
 <!-- ## Template for Each&Every Day $$
 <img align='right' src="https://github.com/guru-shreyansh/GeeksforGeeks-30-Days-of-Code/blob/main/!DOC!/Easy%233.png" width="100">
 <h1>:people_holding_hands: NAME</h1>
